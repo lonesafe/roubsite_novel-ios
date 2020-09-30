@@ -1,0 +1,6 @@
+framework module KLRecycleScrollView {
+  umbrella header "KLRecycleScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

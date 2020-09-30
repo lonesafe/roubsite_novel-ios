@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="GKHomeNavBarView" customModule="MySwiftObject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKO-29-5du">
+                    <rect key="frame" x="15" y="71" width="339" height="32"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_strategy_search" translatesAutoresizingMaskIntoConstraints="NO" id="Aww-7U-ilw">
+                            <rect key="frame" x="10" y="9" width="15" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="3em-V6-U1a"/>
+                                <constraint firstAttribute="width" constant="15" id="Qyk-ox-WKO"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0P-Zc-rmh">
+                            <rect key="frame" x="35" y="0.0" width="304" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Aww-7U-ilw" firstAttribute="leading" secondItem="zKO-29-5du" secondAttribute="leading" constant="10" id="EuL-Xj-Giv"/>
+                        <constraint firstAttribute="trailing" secondItem="n0P-Zc-rmh" secondAttribute="trailing" id="Su5-Uz-Pcy"/>
+                        <constraint firstAttribute="bottom" secondItem="n0P-Zc-rmh" secondAttribute="bottom" id="XOL-hA-fKI"/>
+                        <constraint firstItem="n0P-Zc-rmh" firstAttribute="leading" secondItem="Aww-7U-ilw" secondAttribute="trailing" constant="10" id="ZvL-Sr-YgM"/>
+                        <constraint firstItem="Aww-7U-ilw" firstAttribute="centerY" secondItem="zKO-29-5du" secondAttribute="centerY" id="dC2-hk-mcn"/>
+                        <constraint firstItem="n0P-Zc-rmh" firstAttribute="top" secondItem="zKO-29-5du" secondAttribute="top" id="jej-uf-dP3"/>
+                        <constraint firstItem="n0P-Zc-rmh" firstAttribute="centerY" secondItem="Aww-7U-ilw" secondAttribute="centerY" id="q3y-Yr-1uL"/>
+                        <constraint firstAttribute="height" constant="32" id="uZe-oJ-Xrd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGy-OM-VZU">
+                    <rect key="frame" x="362" y="65" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="TYW-cb-gnP"/>
+                        <constraint firstAttribute="height" constant="44" id="pLK-q9-iqA"/>
+                    </constraints>
+                    <state key="normal" image="icon_boy_h"/>
+                    <state key="selected" image="icon_girl"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zKO-29-5du" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="3QT-5m-KUl"/>
+                <constraint firstAttribute="trailing" secondItem="IGy-OM-VZU" secondAttribute="trailing" constant="8" id="3bk-Um-ycr"/>
+                <constraint firstAttribute="bottom" secondItem="IGy-OM-VZU" secondAttribute="bottom" id="VSr-ca-1i6"/>
+                <constraint firstItem="zKO-29-5du" firstAttribute="centerY" secondItem="IGy-OM-VZU" secondAttribute="centerY" id="rMc-gL-YRV"/>
+                <constraint firstItem="IGy-OM-VZU" firstAttribute="leading" secondItem="zKO-29-5du" secondAttribute="trailing" constant="8" id="xG1-wL-cDI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chirdenBtn" destination="IGy-OM-VZU" id="4pF-ro-8bh"/>
+                <outlet property="mainView" destination="zKO-29-5du" id="mqC-yz-rED"/>
+                <outlet property="tapView" destination="n0P-Zc-rmh" id="7z0-zy-XMo"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="134.26339285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_strategy_search" width="15" height="14"/>
+        <image name="icon_boy_h" width="25" height="25"/>
+        <image name="icon_girl" width="25" height="25"/>
+    </resources>
+</document>

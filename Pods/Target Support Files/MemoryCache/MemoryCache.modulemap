@@ -1,0 +1,6 @@
+framework module MemoryCache {
+  umbrella header "MemoryCache-umbrella.h"
+
+  export *
+  module * { export * }
+}

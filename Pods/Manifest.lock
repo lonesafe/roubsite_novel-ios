@@ -1,0 +1,119 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ATKit_Swift (0.2.1)
+  - ATRefresh_Swift (0.1.4):
+    - Alamofire
+    - DZNEmptyDataSet (~> 1.8.1)
+    - KVOController (~> 1.2.0)
+    - MJRefresh (~> 3.4.3)
+  - DZNEmptyDataSet (1.8.1)
+  - FDFullscreenPopGesture (1.1)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HandyJSON (5.0.2)
+  - Hue (5.0.0)
+  - Kingfisher (5.15.4):
+    - Kingfisher/Core (= 5.15.4)
+  - Kingfisher/Core (5.15.4)
+  - KLRecycleScrollView (1.1.5)
+  - KVOController (1.2.0)
+  - lottie-ios (3.1.8)
+  - MBProgressHUD (1.1.0)
+  - MemoryCache (1.1.0)
+  - MJRefresh (3.4.3)
+  - SnapKit (5.0.1)
+  - SwiftHTTP (3.0.1)
+  - SwiftyJSON (5.0.0)
+  - VTMagic (1.2.4):
+    - VTMagic/Core (= 1.2.4)
+  - VTMagic/Core (1.2.4)
+  - YNPageViewController (0.2.6)
+  - YYCache (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - ATKit_Swift (from `https://github.com/tianya2416/ATKit_Swift.git`)
+  - ATRefresh_Swift (from `https://github.com/tianya2416/ATRefresh_Swift.git`)
+  - FDFullscreenPopGesture (= 1.1)
+  - FMDB
+  - HandyJSON (~> 5.0.0)
+  - Hue
+  - Kingfisher
+  - KLRecycleScrollView
+  - lottie-ios
+  - MBProgressHUD (from `https://github.com/tianya2416/MBProgress.git`)
+  - MemoryCache
+  - SnapKit
+  - SwiftHTTP
+  - SwiftyJSON
+  - VTMagic (~> 1.2.4)
+  - YNPageViewController
+  - YYCache
+
+SPEC REPOS:
+  https://gitee.com/lonesafe/Specs.git:
+    - Alamofire
+    - DZNEmptyDataSet
+    - FDFullscreenPopGesture
+    - FMDB
+    - HandyJSON
+    - Hue
+    - Kingfisher
+    - KLRecycleScrollView
+    - KVOController
+    - lottie-ios
+    - MemoryCache
+    - MJRefresh
+    - SnapKit
+    - SwiftHTTP
+    - SwiftyJSON
+    - VTMagic
+    - YNPageViewController
+    - YYCache
+
+EXTERNAL SOURCES:
+  ATKit_Swift:
+    :git: https://github.com/tianya2416/ATKit_Swift.git
+  ATRefresh_Swift:
+    :git: https://github.com/tianya2416/ATRefresh_Swift.git
+  MBProgressHUD:
+    :git: https://github.com/tianya2416/MBProgress.git
+
+CHECKOUT OPTIONS:
+  ATKit_Swift:
+    :commit: b387b8d5d2222919e007fc908833538406fccd16
+    :git: https://github.com/tianya2416/ATKit_Swift.git
+  ATRefresh_Swift:
+    :commit: 9071932822549413e96540aa516e11147f8d5e52
+    :git: https://github.com/tianya2416/ATRefresh_Swift.git
+  MBProgressHUD:
+    :commit: 9454198b351732bd4eb8cbd7658b6dd73e1e43c8
+    :git: https://github.com/tianya2416/MBProgress.git
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ATKit_Swift: 192fd8090771bed40d0d07ea17ddce2e9cbe83da
+  ATRefresh_Swift: e5e83411a462023981fab977cdd86035c8247882
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  Kingfisher: 657dc1077e5bbbfff864194c79f29e35b722d062
+  KLRecycleScrollView: 1dce1ccb7f94ec96b5c1973b568a2c5926d47c7c
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  MBProgressHUD: 0f5bb58f04db85da16d8b9e9781df7f88cadd4ec
+  MemoryCache: 145f843f3bc78432693f0670bc643475c9bfdbf0
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftHTTP: e94f1aa8cde58637dcc0100f6349de31a3337fde
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  VTMagic: b49e5f456dbcbfd9a3588ba92417233a105bc193
+  YNPageViewController: 33040d429adf0b415d4449ffeec848d8339934ea
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+
+PODFILE CHECKSUM: bb8d2e03da8458a74d481108d804a6f4362878e4
+
+COCOAPODS: 1.9.3
