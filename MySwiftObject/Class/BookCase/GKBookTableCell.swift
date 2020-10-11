@@ -21,11 +21,11 @@ class GKBookTableCell: UICollectionViewCell {
     var model:GKBookModel?{
         didSet{
             guard let item = model else { return }
-            self.imageV.setGkImageWithURL(url: item.cover  ?? "");
+            self.imageV.setGkImageWithURL(imageId: item.cover  ?? "");
             self.titleLab.text = item.title ?? "";
             self.contentLab.text = item.shortIntro ?? "";
             self.nickNameLab.text = item.author ?? "";
-            self.countLab.text = GKNumber.getCount(count: item.latelyFollower ?? 0);
+            self.countLab.text = GKNumber.getCount(count: item.size ?? 0);
             self.stateBtn.setTitle(item.majorCate ?? "", for: .normal);
             self.stateBtn.isHidden = (item.majorCate!.count > 0) ? false : true;
             self.favBtn.setTitle("关注:"+String(item.retentionRatio)+("%"), for: .normal);

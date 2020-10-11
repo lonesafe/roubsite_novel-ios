@@ -9,8 +9,8 @@
 import UIKit
 import HandyJSON
 
-class GKRankModel: HandyJSON {
-    var rankId :String   = "";
+class RoubSiteNovelBlockInfo: HandyJSON {
+    var blockId:String   = "";
     var collapse:String? = "";
     var cover:String? = "";
     var monthRank:String? = "";
@@ -18,16 +18,11 @@ class GKRankModel: HandyJSON {
     var title:String? = "";
     var totalRank:String? = "";
     var select:Bool? = false;
-
-    func mapping(mapper: HelpingMapper) {
-        mapper <<<
-            self.rankId <-- ["rankId","_id"]
-    }
     required init() {}
     
 }
 class GKRankInfo: BaseModel {
-    var male:[GKRankModel]? = [];
-    var female:[GKRankModel]? = [];
+    var male:[RoubSiteNovelBlockInfo]? = [];
+    var female:[RoubSiteNovelBlockInfo]? = [];
     var state:Int? = 0;
 }

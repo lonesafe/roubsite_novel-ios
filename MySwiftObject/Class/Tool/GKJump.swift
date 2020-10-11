@@ -30,8 +30,8 @@ class GKJump: NSObject {
         vc.hidesBottomBarWhenPushed = true;
         UIViewController.rootTopPresentedController().navigationController?.pushViewController(vc, animated: true);
     }
-    class func jumpToClassifyTail(group:String,name:String){
-        let vc:GKClassifyTailController = GKClassifyTailController(group: group, name: name)
+    class func jumpToClassifyTail(sortId:String,name:String){
+        let vc:GKClassifyTailController = GKClassifyTailController(sortId: sortId, name: name)
         vc.hidesBottomBarWhenPushed = true;
         UIViewController.rootTopPresentedController().navigationController?.pushViewController(vc, animated: true);
     }
@@ -47,8 +47,8 @@ class GKJump: NSObject {
         vc.hidesBottomBarWhenPushed = true;
         let nvc : BaseNavigationController = BaseNavigationController.init(rootViewController: vc);
         nvc.modalPresentationStyle = .fullScreen;
-        UIViewController.rootTopPresentedController().navigationController?.pushViewController(vc, animated: true)
-       // UIViewController.rootTopPresentedController().present(nvc, animated: false, completion: nil);
+//        UIViewController.rootTopPresentedController().navigationController?.pushViewController(vc, animated: true)
+        UIViewController.rootTopPresentedController().present(nvc, animated: false, completion: nil);
     }
     class func jumpToBrowse(){
         let vc:GKBrowseController = GKBrowseController();

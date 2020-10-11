@@ -30,16 +30,18 @@ class GKClassifyItemController: BaseConnectionController {
         }
     }
     override func refreshData(page: Int) {
-        GKClassifyNet.getSmallSort(pId: self.titleName, sucesss: { (object) in
+        RoubSiteNovelClassifyNet.getSmallSort(pId: self.titleName, sucesss: { (object) in
             if page == RefreshPageStart{
                 self.listData.removeAll();
             }
             if object["status"] == "1"{
                 let list:[JSON] = object["data"].arrayValue;
                 for sortInfo in list {
-                    var bean:GKClassifyModel = GKClassifyModel.init();
+                    let bean:GKClassifyModel = GKClassifyModel.init();
                     bean.title = sortInfo["SORT_NAME"].stringValue;
                     bean.id = sortInfo["SORT_ID"].stringValue;
+                    bean.bookCount = sortInfo["COUNT"].intValue;
+                    bean.cover = sortInfo["IMAGE"].stringValue;
                     self.listData.append(bean);
                 }
                 self.collectionView.reloadData();
@@ -96,7 +98,7 @@ class GKClassifyItemController: BaseConnectionController {
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model:GKClassifyModel = self.listData[indexPath.row];
-        GKJump.jumpToClassifyTail(group: self.titleName, name: model.title!)
+        GKJump.jumpToClassifyTail(sortId: model.id!, name: model.title!)
     }
     
 }

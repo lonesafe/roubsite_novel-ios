@@ -19,7 +19,7 @@ class GKBookDetailModel: GKBookModel {
     var hasSticky    :Bool? = false
     var hasUpdated   :Bool? = false
     var hasCp        :Bool? = false
-    var isSerial     :Bool? = false
+    var isNotEnd:Bool? = false
     var donate       :Bool? = false
     var le           :Bool? = false
     var allowVoucher :Bool? = false

@@ -47,7 +47,7 @@ class GKClassifyController: BaseViewController,VTMagicViewDelegate,VTMagicViewDa
         // Do any additional setup after loading the view.
     }
     private func loadData(){
-        GKClassifyNet.getBigSort(sucesss: { (object) in
+        RoubSiteNovelClassifyNet.getBigSort(sucesss: { (object) in
             if object["status"] == "1"{
                 let list:[JSON] = object["data"].arrayValue;
                 for srotInfo in list {

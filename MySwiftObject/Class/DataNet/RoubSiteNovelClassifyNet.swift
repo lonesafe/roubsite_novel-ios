@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class GKClassifyNet: NSObject {
+class RoubSiteNovelClassifyNet: NSObject {
     class func getBigSort(sucesss:@escaping ((_ object : JSON) -> Void),failure:@escaping ((_ error : String) ->Void)){
         BaseNetManager.iGetUrlString(urlString:BaseNetManager.hostUrl(txcode:"sort/getBigSort"), parameters:[:], sucesss:sucesss, failure: failure);
     };
@@ -17,24 +17,21 @@ class GKClassifyNet: NSObject {
         let params:Dictionary = ["parentId":pId];
         BaseNetManager.iGetUrlString(urlString:BaseNetManager.hostUrl(txcode:"sort/getSmallSort"), parameters:params, sucesss:sucesss, failure: failure);
     };
-    class func classifyTail(group:String,name:String,page:NSInteger,sucesss:@escaping ((_ object : JSON) ->()),failure:@escaping ((_ error : String) ->())){
-        let params:Dictionary = ["gender":group,"type":"hot","major":name,"start":String(page),"limit":String(RefreshPageSize),"minor":""];
-        BaseNetManager.iGetUrlString(urlString:BaseNetManager.hostUrl(txcode:"book/by-categories"), parameters: params, sucesss: sucesss, failure: failure);
+    class func classifyTail(sortId:String,type:String,page:NSInteger,sucesss:@escaping ((_ object : JSON) ->()),failure:@escaping ((_ error : String) ->())){
+        let params:Dictionary = ["sortId":sortId,"type":type,"page":String(page),"limit":String(RefreshPageSize)];
+        BaseNetManager.iGetUrlString(urlString:BaseNetManager.hostUrl(txcode:"sort/getNovelList"), parameters: params, sucesss: sucesss, failure: failure);
     }
     class func bookDetail(bookId:String,sucesss:@escaping ((_ object : JSON) ->Void),failure:@escaping ((_ error : String) ->Void)){
-        let url = "book/"+(bookId)
-        BaseNetManager.iGetUrlString(urlString:BaseNetManager.hostUrl(txcode:url), parameters:[:], sucesss: sucesss, failure: failure);
-    }
-    class func bookUpdate(bookId:String,sucesss:@escaping ((_ object : JSON) ->Void),failure:@escaping ((_ error : String) ->Void)){
-        let url = "book/"+(bookId)
-        BaseNetManager.iGetUrlString(urlString:BaseNetManager.hostUrl(txcode:url), parameters:["id":bookId,"view":"updated"], sucesss: sucesss, failure: failure);
+        let params:Dictionary = ["novelId":bookId];
+        let url = "novel/getNovelInfo";
+        BaseNetManager.iGetUrlString(urlString:BaseNetManager.hostUrl(txcode:url), parameters:params, sucesss: sucesss, failure: failure);
     }
     class func bookCommend(bookId:String,sucesss:@escaping ((_ object : JSON) ->Void),failure:@escaping ((_ error : String) ->Void)){
-        let url = "book/"+(bookId)+"/recommend";
+        let url = "novel/randomNovels";
         BaseNetManager.iGetUrlString(urlString:BaseNetManager.hostUrl(txcode:url), parameters:[:], sucesss: sucesss, failure: failure);
     }
     class func bookSearch(hotWord:String,page:NSInteger,size:NSInteger,sucesss:@escaping ((_ object : JSON) ->Void),failure:@escaping ((_ error : String) ->Void)){
-        let url = "book/fuzzy-search"
-        BaseNetManager.iGetUrlString(urlString: BaseNetManager.hostUrl(txcode: url), parameters: ["query":hotWord,"start":String(page - 1),"limit":String(size)], sucesss: sucesss, failure: failure)
+        let url = "search"
+        BaseNetManager.iPostUrlString(urlString: BaseNetManager.hostUrl(txcode: url), parameters: ["keyWord":hotWord,"page":String(page),"limit":String(size)], sucesss: sucesss, failure: failure)
     }
 }

@@ -14,11 +14,11 @@ class GKDetailTabView: UIView {
     @IBOutlet weak var readBtn: UIButton!
 
     override func awakeFromNib() {
-        self.favBtn.setTitle("收藏", for: .normal);
-        self.favBtn.setTitle("收藏", for: UIControl.State(rawValue: UIControl.State.normal.rawValue|UIControl.State.highlighted.rawValue));
+        self.favBtn.setTitle("加入书架", for: .normal);
+        self.favBtn.setTitle("加入书架", for: UIControl.State(rawValue: UIControl.State.normal.rawValue|UIControl.State.highlighted.rawValue));
         
-        self.favBtn.setTitle("已收藏", for: .selected);
-        self.favBtn.setTitle("已收藏", for: UIControl.State(rawValue: UIControl.State.selected.rawValue|UIControl.State.highlighted.rawValue));
+        self.favBtn.setTitle("移出书架", for: .selected);
+        self.favBtn.setTitle("移出书架", for: UIControl.State(rawValue: UIControl.State.selected.rawValue|UIControl.State.highlighted.rawValue));
     }
     deinit {
         

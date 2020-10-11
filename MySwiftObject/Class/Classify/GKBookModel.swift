@@ -19,9 +19,10 @@ class GKBookModel:HandyJSON {
     var majorCate :String? = "";
     var minorCate :String? = "";
     var lastChapter:String? = "";
+    var vip:Bool? = false;
     
     var retentionRatio :Float! = 0.0;
-    var latelyFollower :Int? = 0;
+    var size:Int? = 0;
     required init() {}
     
     func mapping(mapper: HelpingMapper) {

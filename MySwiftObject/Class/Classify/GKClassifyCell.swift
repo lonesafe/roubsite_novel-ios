@@ -16,7 +16,7 @@ class GKClassifyCell: UICollectionViewCell {
         didSet{
             guard let item = model else { return }
             self.titleLab.text = item.title ?? "";
-            self.imageV.setGkImageWithURL(url: item.bookCover?.first ?? "");
+            self.imageV.setGkImageWithURL(imageId: item.cover!);
         }
     }
     override func awakeFromNib() {

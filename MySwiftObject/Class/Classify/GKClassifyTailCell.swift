@@ -22,14 +22,18 @@ class GKClassifyTailCell: UITableViewCell {
     var model : GKBookModel?{
         didSet{
             guard let item = model else { return }
-            self.imageV.setGkImageWithURL(url: item.cover  ?? "");
+            self.imageV.setGkImageWithURL(imageId: item.cover  ?? "");
             self.titleLab.text = item.title ?? "";
             self.subTitleLab.text = item.shortIntro ?? "";
             self.nickNameLab.text = item.author ?? "";
-            self.countLab.text = GKNumber.getCount(count: item.latelyFollower ?? 0);
+            self.countLab.text = GKNumber.getCount(count: item.size ?? 0)+"字";
             self.stateBtn.setTitle(item.majorCate ?? "", for: .normal);
             self.stateBtn.isHidden = item.majorCate?.count == 0 ? true : false;
-            self.focusBtn.setTitle("关注:"+String(item.retentionRatio)+("%"), for: .normal);
+            let formatter = DateFormatter();
+            formatter.dateFormat = "yyyy-MM-dd";
+            let date:Date = Date.init(timeIntervalSince1970: item.updateTime);
+            let date1 = formatter.string(from: date);
+            self.focusBtn.setTitle(date1, for: .normal);
         }
     }
     override func awakeFromNib() {

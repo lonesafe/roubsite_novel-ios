@@ -11,7 +11,7 @@ import UIKit
 class GKSexCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLab: UILabel!
-    var model :GKRankModel?{
+    var model :RoubSiteNovelBlockInfo?{
         didSet{
             guard let item = model else { return }
             self.titleLab.text = item.shortTitle ?? "";

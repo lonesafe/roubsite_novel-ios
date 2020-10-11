@@ -19,7 +19,7 @@ class GKUserModel: HandyJSON {
 
     }
     var state : GKUserState = .GKUserBoy;
-    var rankDatas : [GKRankModel] = [];
+    var rankDatas : [RoubSiteNovelBlockInfo] = [];
 }
 class GKUserManager : NSObject{
     class func saveModel(model:GKUserModel) {

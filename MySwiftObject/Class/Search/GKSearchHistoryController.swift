@@ -117,7 +117,7 @@ class GKSearchHistoryController: BaseTableViewController,UITextFieldDelegate,UIC
         let group : DispatchGroup = DispatchGroup.init();
         if page == 1 {
             group.enter();
-            GKHomeNet.homeHot(rankId:"5a6844aafc84c2b8efaa6b6e", sucesss: { (object) in
+            RoubSiteBlockNet.getBlockNovelInfo(blockId:"5a6844aafc84c2b8efaa6b6e", sucesss: { (object) in
                 if let info : GKHomeInfo = GKHomeInfo.deserialize(from: object["ranking"].rawString()){
                     self.info = info;
                 }

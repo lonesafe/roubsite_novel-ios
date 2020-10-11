@@ -10,18 +10,14 @@ import UIKit
 import Kingfisher
 
 extension UIImageView{
-    public func setGkImageWithURL(url:String){
-        self.setGkImageWithURL(url: url, placeholder: placeholder)
+    public func setGkImageWithURL(imageId:String){
+        self.setGkImageWithURL(imageId: imageId, placeholder: placeholder)
     }
-    public func setGkImageWithURL(url:String,placeholder:UIImage){
-        self.setGkImageWithURL(url: url, placeholder: placeholder, unencode: true);
+    public func setGkImageWithURL(imageId:String,placeholder:UIImage){
+        self.setGkImageWithURL(imageId: imageId, placeholder: placeholder, unencode: true);
     }
-    public func setGkImageWithURL(url:String,placeholder:UIImage,unencode:Bool){
-        var str : String = "";
-        if url.hasPrefix("/agent/"){
-            str = url.replacingOccurrences(of: "/agent/", with: "");
-        }
-        str = unencode ? str.removingPercentEncoding! : str;
+    public func setGkImageWithURL(imageId:String,placeholder:UIImage,unencode:Bool){
+        var str : String = BaseNetManager.imageUrl(imageId: imageId)
         self.kf.setImage(with: URL.init(string: str),placeholder: placeholder)
     }
 //    public func downGkImageWithURL(url:String,placeholder:UIImage,unencode:Bool,completion:@escaping((_ image:UIImage,_ success:Bool) -> Void)){

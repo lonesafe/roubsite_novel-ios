@@ -16,7 +16,7 @@ class GKBookCell: UICollectionViewCell {
     var model : GKBookModel?{
         didSet{
             guard let item = model else { return }
-            self.imageV.setGkImageWithURL(url: item.cover ?? "");
+            self.imageV.setGkImageWithURL(imageId: item.cover ?? "");
 
             self.titleLab.text = item.title;
             self.subTitleLab.text = item.author ?? "";

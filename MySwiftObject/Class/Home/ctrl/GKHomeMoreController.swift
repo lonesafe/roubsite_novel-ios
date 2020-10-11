@@ -25,7 +25,7 @@ class GKHomeMoreController: BaseTableViewController {
         self.setupRefresh(scrollView: self.tableView, options: .defaults);
     }
     override func refreshData(page: Int) {
-        GKHomeNet.homeHot(rankId: self.bookInfo.homeId, sucesss: { (object) in
+        RoubSiteBlockNet.getBlockNovelInfo(blockId: self.bookInfo.homeId, sucesss: { (object) in
             if let info : GKHomeInfo = GKHomeInfo.deserialize(from: object["ranking"].rawString()){
                 self.bookInfo = info;
             }

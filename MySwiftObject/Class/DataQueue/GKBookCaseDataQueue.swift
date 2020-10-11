@@ -17,7 +17,7 @@ class GKBookCaseDataQueue: NSObject {
         bookDetail.updateTime = GKNumber.timeStamp();
         BaseDataQueue.insertData(toDataBase: tableName, primaryId: primaryId, userInfo: bookDetail.toJSON()!) { (res) in
             if res{
-                GKHomeNet.reloadHomeData(options: GKLoadOptions.Database)
+                RoubSiteBlockNet.reloadHomeData(options: RoubSiteNovelLoadOptions.Database)
             }
             sucesss(res)
         }
@@ -25,7 +25,7 @@ class GKBookCaseDataQueue: NSObject {
     class func deleteBookModel(bookId:String,sucesss:@escaping ((_ success : Bool) ->Void)){
         BaseDataQueue.deleteData(toDataBase: tableName, primaryId: primaryId, primaryValue: bookId) { (res) in
             if res{
-                GKHomeNet.reloadHomeData(options: GKLoadOptions.Database)
+                RoubSiteBlockNet.reloadHomeData(options: RoubSiteNovelLoadOptions.Database)
             }
             sucesss(res)
         }

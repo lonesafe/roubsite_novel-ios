@@ -17,7 +17,7 @@ class GKBrowseModel: HandyJSON {
     var pageIndex  :NSInteger?    = 0;
     
     var bookModel  :GKBookModel!;
-    var source     :GKNovelSource!;
+//    var source     :GKNovelSource!;
     var chapterInfo:GKNovelChapterInfo!;
     
     required init() {}

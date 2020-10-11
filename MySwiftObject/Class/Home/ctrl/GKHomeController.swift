@@ -9,9 +9,9 @@
 import UIKit
 
 class GKHomeController: BaseConnectionController,KLRecycleScrollViewDelegate {
-    private var options : GKLoadOptions = .None
-    private lazy var homeNet : GKHomeNet = {
-        let net : GKHomeNet = GKHomeNet();
+    private var options : RoubSiteNovelLoadOptions = .None
+    private lazy var homeNet : RoubSiteBlockNet = {
+        let net : RoubSiteBlockNet = RoubSiteBlockNet();
         return net;
     }()
     private lazy var listData: [GKHomeInfo] = {
@@ -38,7 +38,7 @@ class GKHomeController: BaseConnectionController,KLRecycleScrollViewDelegate {
         self.loadData();
     }
     private func loadUI(){
-        self.options = GKLoadOptions.Default;
+        self.options = RoubSiteNovelLoadOptions.Default;
         self.fd_prefersNavigationBarHidden = true;
         self.navBarView.backgroundColor = AppColor;
         self.view.addSubview(self.navBarView);
@@ -60,7 +60,7 @@ class GKHomeController: BaseConnectionController,KLRecycleScrollViewDelegate {
         
     }
     private func loadData(){
-        GKHomeNet.reloadHomeDataNeed { (options) in
+        RoubSiteBlockNet.reloadHomeDataNeed { (options) in
             self.options = options;
             self.refreshData(page: 1);
         }

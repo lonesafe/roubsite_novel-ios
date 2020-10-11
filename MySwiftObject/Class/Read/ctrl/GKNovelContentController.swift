@@ -18,7 +18,7 @@ class GKNovelContentController: BaseViewController{
     private var pageCtrl  :UIPageViewController!
     private var covelCtrl :DZMCoverController!
     private var bookModel :GKBookModel!
-    private var source    :GKNovelSource!
+//    private var source    :GKNovelSource!
     private var chapterInfo:GKNovelChapterInfo!
     private var content    :GKNovelContent!
     
@@ -99,7 +99,7 @@ class GKNovelContentController: BaseViewController{
             }else{
                 self.chapter = model.chapter!;
                 self.pageIndex = model.pageIndex!;
-                self.source = model.source;
+//                self.source = model.source;
                 self.chapterInfo = model.chapterInfo;
                 self.bookContent(chapter: self.chapter)
             }
@@ -113,15 +113,15 @@ class GKNovelContentController: BaseViewController{
         
     }
     func bookSummary(){
-        GKNovelNet.bookSummary(bookId:self.bookModel.bookId!, sucesss: { (source) in
-            self.source = source;
+//        GKNovelNet.bookSummary(bookId:self.bookModel.bookId!, sucesss: { (source) in
+//            self.source = source;
             self.bookChapters()
-        }) { (error) in
-            self.showEmptyTitle(title: error);
-        };
+//        }) { (error) in
+//            self.showEmptyTitle(title: error);
+//        };
     }
     func bookChapters(){
-        GKNovelNet.bookChapters(bookId: self.source.sourceId!, sucesss: { (object) in
+        RoubSiteNovelNet.bookChapters(bookId: self.bookModel.bookId!, sucesss: { (object) in
             self.chapterInfo = object;
             self.bookContent(chapter: 0)
         }) { (error) in
@@ -130,7 +130,7 @@ class GKNovelContentController: BaseViewController{
     }
     func bookContent(chapter:NSInteger){
         let info :GKNovelChapter = self.chapterInfo.chapters[chapter];
-        GKNovelNet.bookContentModel(bookId:self.bookModel.bookId!, model: info, sucesss: { (content) in
+        RoubSiteNovelNet.bookContentModel(bookId:self.bookModel.bookId!, model: info, sucesss: { (content) in
             self.content = content;
             self.reloadUI()
         }) { (error) in
@@ -312,7 +312,7 @@ class GKNovelContentController: BaseViewController{
         let chapter:NSInteger = self.chapter - 1;
         if chapter >= 0 && chapterData.count > chapter {
             let info:GKNovelChapter = chapterData[chapter] ;
-            GKNovelNet.bookContentModel(bookId:self.bookModel.bookId!, model: info, sucesss: { (content) in
+            RoubSiteNovelNet.bookContentModel(bookId:self.bookModel.bookId!, model: info, sucesss: { (content) in
                 GKCache.set(object: content.toJSON()!, key: info.chapterId)
             }) { (error) in
                 
@@ -325,7 +325,7 @@ class GKNovelContentController: BaseViewController{
             let chapter:NSInteger = self.chapter + 1;
             if self.content.pageCount > self.pageIndex && chapterData.count > chapter {
                 let info:GKNovelChapter = chapterData[chapter]
-                GKNovelNet.bookContentModel(bookId:self.bookModel.bookId!, model: info, sucesss: { (content) in
+                RoubSiteNovelNet.bookContentModel(bookId:self.bookModel.bookId!, model: info, sucesss: { (content) in
                     GKCache.set(object: content.toJSON()!, key: info.chapterId)
                 }) { (error) in
                     
@@ -350,7 +350,7 @@ class GKNovelContentController: BaseViewController{
         model.chapter = self.chapter;
         model.pageIndex = self.pageIndex;
         model.chapterInfo = self.chapterInfo;
-        model.source = self.source;
+//        model.source = self.source;
         model.bookModel = self.bookModel;
         GKBrowseDataQueue.insertBookModel(browse: model) { (success) in
             

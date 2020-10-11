@@ -17,7 +17,7 @@
 		0F233691232895C8007E6128 /* GKBrowseDataQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F233690232895C8007E6128 /* GKBrowseDataQueue.swift */; };
 		0F233693232895F9007E6128 /* GKBookCacheDataQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F233692232895F9007E6128 /* GKBookCacheDataQueue.swift */; };
 		0F25A3002325EE0100FDF707 /* GKBookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25A2FF2325EE0100FDF707 /* GKBookDetailModel.swift */; };
-		0F25A3042326000800FDF707 /* GKClassifyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25A3032326000800FDF707 /* GKClassifyNet.swift */; };
+		0F25A3042326000800FDF707 /* RoubSiteNovelClassifyNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25A3032326000800FDF707 /* RoubSiteNovelClassifyNet.swift */; };
 		0F25A3062326002000FDF707 /* GKBookCaseDataQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25A3052326002000FDF707 /* GKBookCaseDataQueue.swift */; };
 		0F25A30A232600D500FDF707 /* BaseDataQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F25A308232600D500FDF707 /* BaseDataQueue.m */; };
 		0F2989AD224320A600AEF751 /* ATAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2989AC224320A600AEF751 /* ATAlertView.swift */; };
@@ -39,7 +39,6 @@
 		0F4C11822332384900F6243D /* GKNovelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C11702332384800F6243D /* GKNovelContent.swift */; };
 		0F4C11832332384900F6243D /* GKNovelChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C11712332384800F6243D /* GKNovelChapter.swift */; };
 		0F4C11842332384900F6243D /* GKNovelSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C11722332384800F6243D /* GKNovelSet.swift */; };
-		0F4C11852332384900F6243D /* GKNovelSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C11732332384800F6243D /* GKNovelSource.swift */; };
 		0F4C11862332384900F6243D /* GKNovelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C11752332384800F6243D /* GKNovelView.swift */; };
 		0F4C11872332384900F6243D /* GKNovelTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4C11762332384800F6243D /* GKNovelTopView.xib */; };
 		0F4C11882332384900F6243D /* GKNovelSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C11772332384800F6243D /* GKNovelSetCell.swift */; };
@@ -72,10 +71,10 @@
 		0F59AD8323420D5B00501576 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59AD7D23420D5B00501576 /* BaseViewController.swift */; };
 		0F59AD8423420D5B00501576 /* BaseMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59AD7E23420D5B00501576 /* BaseMacro.swift */; };
 		0F63C83424AD7266005EC862 /* GKNovelTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F63C83324AD7266005EC862 /* GKNovelTapView.swift */; };
-		0F6BEA2D23277AB7001232FC /* GKHomeNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6BEA2C23277AB7001232FC /* GKHomeNet.swift */; };
+		0F6BEA2D23277AB7001232FC /* RoubSiteBlockNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6BEA2C23277AB7001232FC /* RoubSiteBlockNet.swift */; };
 		0F6BEA3023277AC3001232FC /* GKJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6BEA2F23277AC3001232FC /* GKJump.swift */; };
 		0F6BEA3823277C28001232FC /* DZMCoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6BEA3623277C27001232FC /* DZMCoverController.m */; };
-		0F6F581F232798E2009B147C /* GKNovelNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6F581E232798E2009B147C /* GKNovelNet.swift */; };
+		0F6F581F232798E2009B147C /* RoubSiteNovelNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6F581E232798E2009B147C /* RoubSiteNovelNet.swift */; };
 		0F7A413E2334CD9400C8D42C /* GKSearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A413D2334CD9400C8D42C /* GKSearchResultController.swift */; };
 		0F7A41402334CE0900C8D42C /* GKSearchTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A413F2334CE0900C8D42C /* GKSearchTopView.swift */; };
 		0F7A41422334D1AB00C8D42C /* GKSearchHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A41412334D1AB00C8D42C /* GKSearchHeadView.swift */; };
@@ -84,7 +83,6 @@
 		0F801BA52338BBC000E453C6 /* GKBookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F801BA32338BBC000E453C6 /* GKBookTableCell.swift */; };
 		0F801BA62338BBC000E453C6 /* GKBookTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F801BA42338BBC000E453C6 /* GKBookTableCell.xib */; };
 		0F801BA82338BEEB00E453C6 /* GKNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F801BA72338BEEB00E453C6 /* GKNumber.swift */; };
-		0F9C170E233E0BA40004BBC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0F9C170D233E0BA40004BBC5 /* README.md */; };
 		0F9C564C2320FF7A00326B6D /* GKClassifyTailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C564A2320FF7A00326B6D /* GKClassifyTailCell.swift */; };
 		0F9C564D2320FF7A00326B6D /* GKClassifyTailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9C564B2320FF7A00326B6D /* GKClassifyTailCell.xib */; };
 		0F9C564F2321013C00326B6D /* GKBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C564E2321013C00326B6D /* GKBookModel.swift */; };
@@ -155,7 +153,7 @@
 		0F233690232895C8007E6128 /* GKBrowseDataQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKBrowseDataQueue.swift; sourceTree = "<group>"; };
 		0F233692232895F9007E6128 /* GKBookCacheDataQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookCacheDataQueue.swift; sourceTree = "<group>"; };
 		0F25A2FF2325EE0100FDF707 /* GKBookDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookDetailModel.swift; sourceTree = "<group>"; };
-		0F25A3032326000800FDF707 /* GKClassifyNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKClassifyNet.swift; sourceTree = "<group>"; };
+		0F25A3032326000800FDF707 /* RoubSiteNovelClassifyNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoubSiteNovelClassifyNet.swift; sourceTree = "<group>"; };
 		0F25A3052326002000FDF707 /* GKBookCaseDataQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookCaseDataQueue.swift; sourceTree = "<group>"; };
 		0F25A308232600D500FDF707 /* BaseDataQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataQueue.m; sourceTree = "<group>"; };
 		0F25A309232600D500FDF707 /* BaseDataQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataQueue.h; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 		0F4C11702332384800F6243D /* GKNovelContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNovelContent.swift; sourceTree = "<group>"; };
 		0F4C11712332384800F6243D /* GKNovelChapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNovelChapter.swift; sourceTree = "<group>"; };
 		0F4C11722332384800F6243D /* GKNovelSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNovelSet.swift; sourceTree = "<group>"; };
-		0F4C11732332384800F6243D /* GKNovelSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNovelSource.swift; sourceTree = "<group>"; };
 		0F4C11752332384800F6243D /* GKNovelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNovelView.swift; sourceTree = "<group>"; };
 		0F4C11762332384800F6243D /* GKNovelTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKNovelTopView.xib; sourceTree = "<group>"; };
 		0F4C11772332384800F6243D /* GKNovelSetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKNovelSetCell.swift; sourceTree = "<group>"; };
@@ -218,11 +215,11 @@
 		0F59AD7D23420D5B00501576 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0F59AD7E23420D5B00501576 /* BaseMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMacro.swift; sourceTree = "<group>"; };
 		0F63C83324AD7266005EC862 /* GKNovelTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNovelTapView.swift; sourceTree = "<group>"; };
-		0F6BEA2C23277AB7001232FC /* GKHomeNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKHomeNet.swift; sourceTree = "<group>"; };
+		0F6BEA2C23277AB7001232FC /* RoubSiteBlockNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoubSiteBlockNet.swift; sourceTree = "<group>"; };
 		0F6BEA2F23277AC3001232FC /* GKJump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKJump.swift; sourceTree = "<group>"; };
 		0F6BEA3623277C27001232FC /* DZMCoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMCoverController.m; sourceTree = "<group>"; };
 		0F6BEA3723277C27001232FC /* DZMCoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMCoverController.h; sourceTree = "<group>"; };
-		0F6F581E232798E2009B147C /* GKNovelNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNovelNet.swift; sourceTree = "<group>"; };
+		0F6F581E232798E2009B147C /* RoubSiteNovelNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoubSiteNovelNet.swift; sourceTree = "<group>"; };
 		0F7A413D2334CD9400C8D42C /* GKSearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKSearchResultController.swift; sourceTree = "<group>"; };
 		0F7A413F2334CE0900C8D42C /* GKSearchTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKSearchTopView.swift; sourceTree = "<group>"; };
 		0F7A41412334D1AB00C8D42C /* GKSearchHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKSearchHeadView.swift; sourceTree = "<group>"; };
@@ -231,7 +228,6 @@
 		0F801BA32338BBC000E453C6 /* GKBookTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookTableCell.swift; sourceTree = "<group>"; };
 		0F801BA42338BBC000E453C6 /* GKBookTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKBookTableCell.xib; sourceTree = "<group>"; };
 		0F801BA72338BEEB00E453C6 /* GKNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNumber.swift; sourceTree = "<group>"; };
-		0F9C170D233E0BA40004BBC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
 		0F9C564A2320FF7A00326B6D /* GKClassifyTailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKClassifyTailCell.swift; sourceTree = "<group>"; };
 		0F9C564B2320FF7A00326B6D /* GKClassifyTailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKClassifyTailCell.xib; sourceTree = "<group>"; };
 		0F9C564E2321013C00326B6D /* GKBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookModel.swift; sourceTree = "<group>"; };
@@ -380,9 +376,9 @@
 		0F25A3022326000800FDF707 /* DataNet */ = {
 			isa = PBXGroup;
 			children = (
-				0F25A3032326000800FDF707 /* GKClassifyNet.swift */,
-				0F6BEA2C23277AB7001232FC /* GKHomeNet.swift */,
-				0F6F581E232798E2009B147C /* GKNovelNet.swift */,
+				0F25A3032326000800FDF707 /* RoubSiteNovelClassifyNet.swift */,
+				0F6BEA2C23277AB7001232FC /* RoubSiteBlockNet.swift */,
+				0F6F581E232798E2009B147C /* RoubSiteNovelNet.swift */,
 				0F2CDC47243446A4009B1368 /* AppUser.swift */,
 			);
 			path = DataNet;
@@ -441,7 +437,6 @@
 			isa = PBXGroup;
 			children = (
 				0F7F85FB2473AD6B001AE117 /* Launch.json */,
-				0F9C170D233E0BA40004BBC5 /* README.md */,
 				0F4C11632332332700F6243D /* AppDelegate.swift */,
 				0F4C11622332332700F6243D /* Assets.xcassets */,
 				0F4C11662332342A00F6243D /* LaunchScreen.storyboard */,
@@ -476,7 +471,6 @@
 				0F4C11702332384800F6243D /* GKNovelContent.swift */,
 				0F4C11712332384800F6243D /* GKNovelChapter.swift */,
 				0F4C11722332384800F6243D /* GKNovelSet.swift */,
-				0F4C11732332384800F6243D /* GKNovelSource.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -813,7 +807,6 @@
 				0F9C565C23211B1F00326B6D /* GKDetailTopView.xib in Resources */,
 				0F801BA62338BBC000E453C6 /* GKBookTableCell.xib in Resources */,
 				0F4C118A2332384900F6243D /* GKNovelTabView.xib in Resources */,
-				0F9C170E233E0BA40004BBC5 /* README.md in Resources */,
 				0F4C11A4233238E800F6243D /* GKSexCell.xib in Resources */,
 				0F3920D82320E6F700F0ED44 /* GKClassifyCell.xib in Resources */,
 				0F335A882326264B00785F06 /* GKBookCell.xib in Resources */,
@@ -904,7 +897,6 @@
 				0F63C83424AD7266005EC862 /* GKNovelTapView.swift in Sources */,
 				0F4C11A0233238E800F6243D /* GKHomeMoreController.swift in Sources */,
 				0F0F56E92320BCD60030D684 /* GKClassifyItemController.swift in Sources */,
-				0F4C11852332384900F6243D /* GKNovelSource.swift in Sources */,
 				0F4C11802332384900F6243D /* GKNovelContentController.swift in Sources */,
 				0FC918282328DFFE00E79AC3 /* GKMineController.swift in Sources */,
 				0F6BEA3823277C28001232FC /* DZMCoverController.m in Sources */,
@@ -916,7 +908,7 @@
 				0F2CDC48243446A4009B1368 /* AppUser.swift in Sources */,
 				0F4C11A2233238E800F6243D /* GKRankInfo.swift in Sources */,
 				0F4C11A8233238E800F6243D /* GKHomeNavBarView.swift in Sources */,
-				0F6F581F232798E2009B147C /* GKNovelNet.swift in Sources */,
+				0F6F581F232798E2009B147C /* RoubSiteNovelNet.swift in Sources */,
 				0F801BA52338BBC000E453C6 /* GKBookTableCell.swift in Sources */,
 				0F4C118E2332384900F6243D /* GKNovelSetManager.swift in Sources */,
 				0F59AD8023420D5B00501576 /* BaseConnectionController.swift in Sources */,
@@ -926,7 +918,7 @@
 				0FF054BB2328C921007FDF67 /* GKBrowseModel.swift in Sources */,
 				0FC998DF2431A47900DE70C2 /* GKTool.m in Sources */,
 				0F3920D42320D9E200F0ED44 /* GKClassifyModel.swift in Sources */,
-				0F25A3042326000800FDF707 /* GKClassifyNet.swift in Sources */,
+				0F25A3042326000800FDF707 /* RoubSiteNovelClassifyNet.swift in Sources */,
 				0F4C11812332384900F6243D /* GKNovelItemController.swift in Sources */,
 				0F25A3062326002000FDF707 /* GKBookCaseDataQueue.swift in Sources */,
 				0F3920D72320E6F700F0ED44 /* GKClassifyCell.swift in Sources */,
@@ -957,7 +949,7 @@
 				0FE09A862334BA2F00665C66 /* GKSearchDataQueue.m in Sources */,
 				0F9C564F2321013C00326B6D /* GKBookModel.swift in Sources */,
 				0F25A30A232600D500FDF707 /* BaseDataQueue.m in Sources */,
-				0F6BEA2D23277AB7001232FC /* GKHomeNet.swift in Sources */,
+				0F6BEA2D23277AB7001232FC /* RoubSiteBlockNet.swift in Sources */,
 				0F2AB5C92330BE39008FAF4B /* GKUserModel.swift in Sources */,
 				0FC918312328E73800E79AC3 /* GKBrowseController.swift in Sources */,
 				0F4C118D2332384900F6243D /* GKNovelTabView.swift in Sources */,

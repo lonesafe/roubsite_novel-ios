@@ -12,19 +12,13 @@ class GKClassifyModel : Codable {
     
     var title     :String? = ""
     var cover     :String? = ""
-    var monthlyCount:Int? = 0
-    var icon      :String? = ""
     var bookCount :Int? = 0
-    var bookCover :[String]? = []
     var id:String? = ""
     
     enum CodingKeys: String, CodingKey {
         case title = "name"
         case cover
-        case monthlyCount
-        case icon
         case bookCount
-        case bookCover
         case id
     }
 }

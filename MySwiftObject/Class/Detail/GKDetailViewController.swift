@@ -8,8 +8,9 @@
 
 import UIKit
 import SwiftyJSON
-class GKDetailViewController: YNPageViewController,YNPageViewControllerDelegate,YNPageViewControllerDataSource {
-    class func vcWithBookId(bookId:String) -> Self{
+
+class GKDetailViewController: YNPageViewController, YNPageViewControllerDelegate, YNPageViewControllerDataSource {
+    class func vcWithBookId(bookId: String) -> Self {
         let config = YNPageConfigration.defaultConfig();
         config?.headerViewCouldScale = true;
         config?.scrollMenu = true;
@@ -27,52 +28,56 @@ class GKDetailViewController: YNPageViewController,YNPageViewControllerDelegate,
         config?.normalItemColor = Appx333333;
         config?.suspenOffsetY = STATUS_BAR_HIGHT;
         config?.lineWidthEqualFontWidth = true;
-        let vc :GKDetailViewController = GKDetailViewController.init(controllers: [GKCenterController.vcWithBookId(bookId:bookId),GKChapterController.vcWithBookId(bookId:bookId)], titles: ["推荐","章节"], config:config);
+        let vc: GKDetailViewController = GKDetailViewController.init(controllers: [GKCenterController.vcWithBookId(bookId: bookId), GKChapterController.vcWithBookId(bookId: bookId)], titles: ["推荐", "章节"], config: config);
         vc.delegate = vc;
         vc.dataSource = vc;
         vc.headerView = vc.topView;
         vc.bookId = bookId;
         return vc as! Self;
     }
-    private lazy var topView : GKDetailTopView = {
-        let topView :GKDetailTopView = GKDetailTopView.instanceView() ;
+
+    private lazy var topView: GKDetailTopView = {
+        let topView: GKDetailTopView = GKDetailTopView.instanceView();
         topView.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: 150 + NAVI_BAR_HIGHT);
         topView.backAction.addTarget(self, action: #selector(goBackAction), for: .touchUpInside)
         return topView;
     }()
     private lazy var tabView: GKDetailTabView = {
-        let tab :GKDetailTabView = GKDetailTabView.instanceView() ;
-        tab.favBtn.addTarget(self, action:#selector(favAction(sender:)), for: .touchUpInside)
+        let tab: GKDetailTabView = GKDetailTabView.instanceView();
+        tab.favBtn.addTarget(self, action: #selector(favAction(sender:)), for: .touchUpInside)
         tab.readBtn.addTarget(self, action: #selector(readAction), for: .touchUpInside);
         return tab;
     }()
     private lazy var backBtn: UIButton = {
         var backBtn = UIButton.init(type: .custom);
-        backBtn.setImage(UIImage.init(named:"icon_detail_back"), for: .normal);
+        backBtn.setImage(UIImage.init(named: "icon_detail_back"), for: .normal);
         backBtn.addTarget(self, action: #selector(goBackAction), for: .touchUpInside);
         return backBtn;
     }()
-    private var bookId:String! = nil
+    private var bookId: String! = nil
     private var height: CGFloat = 0;
-    private var model : GKBookDetailModel = GKBookDetailModel(){
-        didSet{
-            let item : GKBookDetailModel = model;
+    private var model: GKBookDetailModel = GKBookDetailModel() {
+        didSet {
+            let item: GKBookDetailModel = model;
             self.topView.model = item;
         }
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         loadUI();
         loadData()
     }
+
     override func viewDidAppear(_ animated: Bool) {
-        super .viewDidAppear(animated)
+        super.viewDidAppear(animated)
         GKBookCaseDataQueue.getBookModel(bookId: self.bookId) { (model) in
             self.tabView.favBtn.isSelected = model.bookId!.count > 0 ? true : false;
-            
+
         }
     }
-    private func loadUI(){
+
+    private func loadUI() {
         self.fd_prefersNavigationBarHidden = true;
         self.view.addSubview(self.tabView);
         self.tabView.snp.makeConstraints { (make) in
@@ -81,28 +86,30 @@ class GKDetailViewController: YNPageViewController,YNPageViewControllerDelegate,
             make.bottom.equalToSuperview().offset(-TAB_BAR_ADDING);
         }
     }
-    @objc private func readAction(){
-        if let model :GKBookModel = GKBookModel.deserialize(from: self.model.toJSONString()){
-            GKJump.jumpToNovel(bookModel:model);
+
+    @objc private func readAction() {
+        if let model: GKBookModel = GKBookModel.deserialize(from: self.model.toJSONString()) {
+            GKJump.jumpToNovel(bookModel: model);
         }
     }
-    @objc private func favAction(sender:UIButton) {
+
+    @objc private func favAction(sender: UIButton) {
         if self.model.bookId!.count == 0 {
             return;
         }
-        if let model : GKBookModel = GKBookModel.deserialize(from:self.model.toJSONString()) {
+        if let model: GKBookModel = GKBookModel.deserialize(from: self.model.toJSONString()) {
             if sender.isSelected == false {
                 GKBookCaseDataQueue.insertBookModel(bookDetail: model) { (success) in
-                    if success{
+                    if success {
                         self.tabView.favBtn.isSelected = true;
                         MBProgressHUD.showMessage("收藏成功");
                     }
                 }
-            }else{
-                ATAlertView.showAlertView(title: "是否取消收藏？", message:"", normals:["取消"], hights:["确定"]) { (title, index) in
-                    if index > 0{
-                        GKBookCaseDataQueue.deleteBookModel(bookId:self.bookId, sucesss: { (success) in
-                            if success{
+            } else {
+                ATAlertView.showAlertView(title: "是否取消收藏？", message: "", normals: ["取消"], hights: ["确定"]) { (title, index) in
+                    if index > 0 {
+                        GKBookCaseDataQueue.deleteBookModel(bookId: self.bookId, sucesss: { (success) in
+                            if success {
                                 MBProgressHUD.showMessage("取消收藏成功");
                                 self.tabView.favBtn.isSelected = false;
                             }
@@ -112,35 +119,52 @@ class GKDetailViewController: YNPageViewController,YNPageViewControllerDelegate,
             }
         }
     }
-    @objc private func goBackAction(){
+
+    @objc private func goBackAction() {
         self.goBack();
     }
-    private func loadData(){
-        GKClassifyNet.bookDetail(bookId: self.bookId, sucesss: { (object) in
-            if let model : GKBookDetailModel=GKBookDetailModel.deserialize(from: object.rawString()){
+
+    private func loadData() {
+        RoubSiteNovelClassifyNet.bookDetail(bookId: self.bookId, sucesss: { (object) in
+            if ("1" == object["status"]) {
+                let novelInfo: JSON = object["data"];
+                var model: GKBookDetailModel = GKBookDetailModel.init();
+                model.size = novelInfo["SIZE"].intValue;
+                model.wordCount = novelInfo["SIZE"].intValue;
+                if ("1" == novelInfo["IS_VIP"].stringValue) {
+                    model.vip = true;
+                }
+                var updateTime = Int(novelInfo["LAST_UPDATE_TIME"].stringValue)!;
+                model.updateTime = TimeInterval.init(updateTime);
+                model.title = novelInfo["NOVEL_NAME"].stringValue;
+                model.shortIntro = novelInfo["NOVEL_SUMMARY"].stringValue;
+                model.lastChapter = novelInfo["LAST_CHAPTER_NAME"].stringValue;
+                model.cover = novelInfo["NOVEL_IMAGE"].stringValue;
+                model.bookId = novelInfo["NOVEL_ID"].stringValue;
+                model.author = novelInfo["AUTHOR_NAME"].stringValue;
+                if (novelInfo["STATUS"]=="0"){
+                    model.isNotEnd = true;
+                }
                 self.model = model;
             }
         }) { (error) in
 
         }
-        GKClassifyNet.bookUpdate(bookId: self.bookId, sucesss: { (object) in
-            //print(object);
-        }) { (error) in
-            
-        }
     }
+
     func pageViewController(_ pageViewController: YNPageViewController!, pageFor index: Int) -> UIScrollView! {
-        let vc : UIViewController = pageViewController.controllersM![index] as! UIViewController;
-        if vc is BaseTableViewController{
-            let ctrl : BaseTableViewController = vc as! BaseTableViewController
+        let vc: UIViewController = pageViewController.controllersM![index] as! UIViewController;
+        if vc is BaseTableViewController {
+            let ctrl: BaseTableViewController = vc as! BaseTableViewController
             return ctrl.tableView;
-        }else if vc is BaseConnectionController{
-            let ctrl : BaseConnectionController = vc as! BaseConnectionController
+        } else if vc is BaseConnectionController {
+            let ctrl: BaseConnectionController = vc as! BaseConnectionController
             return ctrl.collectionView;
         }
         return UIScrollView.init()
     }
-    override var preferredStatusBarStyle: UIStatusBarStyle{
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent;
     }
 }
