@@ -1,5 +1,5 @@
 //
-//  GKClassifyTailCell.swift
+//  SortBookListItem.swift
 //  MySwiftObject
 //
 //  Created by wangws1990 on 2019/9/5.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GKClassifyTailCell: UITableViewCell {
+class SortBookListItem: UITableViewCell {
 
     @IBOutlet weak var imageV: UIImageView!
     @IBOutlet weak var titleLab: UILabel!

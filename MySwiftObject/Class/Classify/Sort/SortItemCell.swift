@@ -1,5 +1,5 @@
 //
-//  GKClassifyCell.swift
+//  SortItemCell.swift
 //  MySwiftObject
 //
 //  Created by wangws1990 on 2019/9/5.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class GKClassifyCell: UICollectionViewCell {
+class SortItemCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLab: UILabel!
     @IBOutlet weak var imageV: UIImageView!
-    var model : GKClassifyModel?{
+    var model : SortBean?{
         didSet{
             guard let item = model else { return }
             self.titleLab.text = item.title ?? "";

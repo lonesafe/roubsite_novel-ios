@@ -77,7 +77,7 @@ class GKSearchResultController: BaseTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: GKClassifyTailCell = GKClassifyTailCell.cellForTableView(tableView: tableView, indexPath: indexPath);
+        let cell: SortBookListItem = SortBookListItem.cellForTableView(tableView: tableView, indexPath: indexPath);
         cell.model = self.listData[indexPath.row];
         return cell;
     }

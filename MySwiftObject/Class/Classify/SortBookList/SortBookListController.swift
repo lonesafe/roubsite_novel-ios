@@ -1,5 +1,5 @@
 //
-//  GKClassifyTailController.swift
+//  SortBookListController.swift
 //  MySwiftObject
 //
 //  Created by wangws1990 on 2019/9/5.
@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class GKClassifyTailController: BaseTableViewController {
+class SortBookListController: BaseTableViewController {
     convenience init(sortId: String, name: String) {
         self.init();
         self.sortId = sortId;
@@ -75,7 +75,7 @@ class GKClassifyTailController: BaseTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: GKClassifyTailCell = GKClassifyTailCell.cellForTableView(tableView: tableView, indexPath: indexPath);
+        let cell: SortBookListItem = SortBookListItem.cellForTableView(tableView: tableView, indexPath: indexPath);
         cell.model = self.listData[indexPath.row];
         return cell;
     }

@@ -1,5 +1,5 @@
 //
-//  GKClassifyModel.swift
+//  SortBean.swift
 //  MySwiftObject
 //
 //  Created by wangws1990 on 2019/9/5.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GKClassifyModel : Codable {
+class SortBean: Codable {
     
     var title     :String? = ""
     var cover     :String? = ""

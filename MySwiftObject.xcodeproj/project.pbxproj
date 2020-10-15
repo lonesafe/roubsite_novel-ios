@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F0F56E22320A8150030D684 /* GKTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F56E12320A8150030D684 /* GKTabBarController.swift */; };
-		0F0F56E42320AB800030D684 /* GKClassifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F56E32320AB800030D684 /* GKClassifyController.swift */; };
 		0F0F56E72320AC380030D684 /* GKBookCaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F56E62320AC380030D684 /* GKBookCaseController.swift */; };
-		0F0F56E92320BCD60030D684 /* GKClassifyItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F56E82320BCD60030D684 /* GKClassifyItemController.swift */; };
 		0F1676B92333501B0053AF41 /* GKNovelDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1676B82333501B0053AF41 /* GKNovelDirectoryView.swift */; };
 		0F1676BC233351880053AF41 /* GKNovelDirectoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1676BA233351880053AF41 /* GKNovelDirectoryCell.swift */; };
 		0F1676BD233351880053AF41 /* GKNovelDirectoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1676BB233351880053AF41 /* GKNovelDirectoryCell.xib */; };
@@ -25,10 +23,7 @@
 		0F2CDC48243446A4009B1368 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2CDC47243446A4009B1368 /* AppUser.swift */; };
 		0F335A872326264B00785F06 /* GKBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F335A852326264B00785F06 /* GKBookCell.swift */; };
 		0F335A882326264B00785F06 /* GKBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F335A862326264B00785F06 /* GKBookCell.xib */; };
-		0F3920D42320D9E200F0ED44 /* GKClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3920D32320D9E200F0ED44 /* GKClassifyModel.swift */; };
-		0F3920D72320E6F700F0ED44 /* GKClassifyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3920D52320E6F700F0ED44 /* GKClassifyCell.swift */; };
-		0F3920D82320E6F700F0ED44 /* GKClassifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3920D62320E6F700F0ED44 /* GKClassifyCell.xib */; };
-		0F3920DD2320F2FC00F0ED44 /* GKClassifyTailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3920DC2320F2FC00F0ED44 /* GKClassifyTailController.swift */; };
+		0F3920D42320D9E200F0ED44 /* SortBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3920D32320D9E200F0ED44 /* SortBean.swift */; };
 		0F48240D21C2049800645054 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F48240C21C2049800645054 /* BaseModel.swift */; };
 		0F48240F21C2070C00645054 /* BaseNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F48240E21C2070C00645054 /* BaseNetManager.swift */; };
 		0F4C11642332332700F6243D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4C11622332332700F6243D /* Assets.xcassets */; };
@@ -83,8 +78,6 @@
 		0F801BA52338BBC000E453C6 /* GKBookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F801BA32338BBC000E453C6 /* GKBookTableCell.swift */; };
 		0F801BA62338BBC000E453C6 /* GKBookTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F801BA42338BBC000E453C6 /* GKBookTableCell.xib */; };
 		0F801BA82338BEEB00E453C6 /* GKNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F801BA72338BEEB00E453C6 /* GKNumber.swift */; };
-		0F9C564C2320FF7A00326B6D /* GKClassifyTailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C564A2320FF7A00326B6D /* GKClassifyTailCell.swift */; };
-		0F9C564D2320FF7A00326B6D /* GKClassifyTailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9C564B2320FF7A00326B6D /* GKClassifyTailCell.xib */; };
 		0F9C564F2321013C00326B6D /* GKBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C564E2321013C00326B6D /* GKBookModel.swift */; };
 		0F9C56522321106E00326B6D /* GKDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C56512321106E00326B6D /* GKDetailViewController.swift */; };
 		0F9C56542321108C00326B6D /* GKDetailTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C56532321108C00326B6D /* GKDetailTabView.swift */; };
@@ -108,6 +101,13 @@
 		0FF054BB2328C921007FDF67 /* GKBrowseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF054BA2328C921007FDF67 /* GKBrowseModel.swift */; };
 		D507E9D92524321400035071 /* Pods_MySwiftObject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D507E97A2524287C00035071 /* Pods_MySwiftObject.framework */; };
 		D507E9DA2524321400035071 /* Pods_MySwiftObject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D507E97A2524287C00035071 /* Pods_MySwiftObject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF5B8093155DD9D175BCDE3C /* SortBookListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8C8DEC2B127D3B484FF7 /* SortBookListItem.swift */; };
+		FF5B81A2877BF9416C8ADF3F /* SortItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8721EB730986820C0977 /* SortItemCell.swift */; };
+		FF5B85189D74EC269992281A /* SortItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8952800865E9DAB99576 /* SortItemController.swift */; };
+		FF5B86E3FC107EA037007B71 /* SortBookListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5B8611BB3C66D3A34E044D /* SortBookListItem.xib */; };
+		FF5B888E80A9A7C257661D7D /* SortItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5B851CA38C82D5F5272439 /* SortItemCell.xib */; };
+		FF5B8B6CE58F105DA66758BF /* SortController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8EE3AE11BB21CD0DA406 /* SortController.swift */; };
+		FF5B8C8A726090B10370A57E /* SortBookListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8BC89D28E69F3EB8C681 /* SortBookListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,9 +144,7 @@
 /* Begin PBXFileReference section */
 		0F07A870236025C500FE974F /* MySwiftObject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySwiftObject.entitlements; sourceTree = "<group>"; };
 		0F0F56E12320A8150030D684 /* GKTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKTabBarController.swift; sourceTree = "<group>"; };
-		0F0F56E32320AB800030D684 /* GKClassifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKClassifyController.swift; sourceTree = "<group>"; };
 		0F0F56E62320AC380030D684 /* GKBookCaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookCaseController.swift; sourceTree = "<group>"; };
-		0F0F56E82320BCD60030D684 /* GKClassifyItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKClassifyItemController.swift; sourceTree = "<group>"; };
 		0F1676B82333501B0053AF41 /* GKNovelDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNovelDirectoryView.swift; sourceTree = "<group>"; };
 		0F1676BA233351880053AF41 /* GKNovelDirectoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNovelDirectoryCell.swift; sourceTree = "<group>"; };
 		0F1676BB233351880053AF41 /* GKNovelDirectoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKNovelDirectoryCell.xib; sourceTree = "<group>"; };
@@ -162,10 +160,7 @@
 		0F2CDC47243446A4009B1368 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		0F335A852326264B00785F06 /* GKBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookCell.swift; sourceTree = "<group>"; };
 		0F335A862326264B00785F06 /* GKBookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKBookCell.xib; sourceTree = "<group>"; };
-		0F3920D32320D9E200F0ED44 /* GKClassifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKClassifyModel.swift; sourceTree = "<group>"; };
-		0F3920D52320E6F700F0ED44 /* GKClassifyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKClassifyCell.swift; sourceTree = "<group>"; };
-		0F3920D62320E6F700F0ED44 /* GKClassifyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKClassifyCell.xib; sourceTree = "<group>"; };
-		0F3920DC2320F2FC00F0ED44 /* GKClassifyTailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKClassifyTailController.swift; sourceTree = "<group>"; };
+		0F3920D32320D9E200F0ED44 /* SortBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBean.swift; sourceTree = "<group>"; };
 		0F48240C21C2049800645054 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		0F48240E21C2070C00645054 /* BaseNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetManager.swift; sourceTree = "<group>"; };
 		0F4C11612332332700F6243D /* Swift-Briding-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Briding-Header.h"; sourceTree = "<group>"; };
@@ -228,8 +223,6 @@
 		0F801BA32338BBC000E453C6 /* GKBookTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookTableCell.swift; sourceTree = "<group>"; };
 		0F801BA42338BBC000E453C6 /* GKBookTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKBookTableCell.xib; sourceTree = "<group>"; };
 		0F801BA72338BEEB00E453C6 /* GKNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKNumber.swift; sourceTree = "<group>"; };
-		0F9C564A2320FF7A00326B6D /* GKClassifyTailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKClassifyTailCell.swift; sourceTree = "<group>"; };
-		0F9C564B2320FF7A00326B6D /* GKClassifyTailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKClassifyTailCell.xib; sourceTree = "<group>"; };
 		0F9C564E2321013C00326B6D /* GKBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBookModel.swift; sourceTree = "<group>"; };
 		0F9C56512321106E00326B6D /* GKDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDetailViewController.swift; sourceTree = "<group>"; };
 		0F9C56532321108C00326B6D /* GKDetailTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKDetailTabView.swift; sourceTree = "<group>"; };
@@ -256,6 +249,13 @@
 		34F2BB9EFF1A273E8175F959 /* Pods-MySwiftObject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftObject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySwiftObject/Pods-MySwiftObject.debug.xcconfig"; sourceTree = "<group>"; };
 		3DE33E5AB92EA2F9F0229E48 /* Pods-MySwiftObject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySwiftObject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySwiftObject/Pods-MySwiftObject.release.xcconfig"; sourceTree = "<group>"; };
 		D507E97A2524287C00035071 /* Pods_MySwiftObject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MySwiftObject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5B851CA38C82D5F5272439 /* SortItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortItemCell.xib; sourceTree = "<group>"; };
+		FF5B8611BB3C66D3A34E044D /* SortBookListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortBookListItem.xib; sourceTree = "<group>"; };
+		FF5B8721EB730986820C0977 /* SortItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortItemCell.swift; sourceTree = "<group>"; };
+		FF5B8952800865E9DAB99576 /* SortItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortItemController.swift; sourceTree = "<group>"; };
+		FF5B8BC89D28E69F3EB8C681 /* SortBookListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortBookListController.swift; sourceTree = "<group>"; };
+		FF5B8C8DEC2B127D3B484FF7 /* SortBookListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortBookListItem.swift; sourceTree = "<group>"; };
+		FF5B8EE3AE11BB21CD0DA406 /* SortController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,7 +291,6 @@
 				0F25A307232600D500FDF707 /* BaseDataQueue */,
 				0F48240221C0F7BB00645054 /* controller */,
 				0F48240621C0F7BB00645054 /* model */,
-				0F48240121C0F7BB00645054 /* view */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -322,14 +321,9 @@
 				0F25A2FF2325EE0100FDF707 /* GKBookDetailModel.swift */,
 				0F9C564E2321013C00326B6D /* GKBookModel.swift */,
 				0FF054BA2328C921007FDF67 /* GKBrowseModel.swift */,
-				0F3920D52320E6F700F0ED44 /* GKClassifyCell.swift */,
-				0F3920D62320E6F700F0ED44 /* GKClassifyCell.xib */,
-				0F0F56E32320AB800030D684 /* GKClassifyController.swift */,
-				0F0F56E82320BCD60030D684 /* GKClassifyItemController.swift */,
-				0F3920D32320D9E200F0ED44 /* GKClassifyModel.swift */,
-				0F9C564A2320FF7A00326B6D /* GKClassifyTailCell.swift */,
-				0F9C564B2320FF7A00326B6D /* GKClassifyTailCell.xib */,
-				0F3920DC2320F2FC00F0ED44 /* GKClassifyTailController.swift */,
+				0F3920D32320D9E200F0ED44 /* SortBean.swift */,
+				FF5B8269AED1C23AC681343A /* Sort */,
+				FF5B89A80377D92E310A1C94 /* SortBookList */,
 			);
 			path = Classify;
 			sourceTree = "<group>";
@@ -402,13 +396,6 @@
 				0FAF4D1A24A1E7FF0097378E /* GKCache.swift */,
 			);
 			path = User;
-			sourceTree = "<group>";
-		};
-		0F48240121C0F7BB00645054 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		0F48240221C0F7BB00645054 /* controller */ = {
@@ -685,6 +672,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF5B8269AED1C23AC681343A /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				FF5B8952800865E9DAB99576 /* SortItemController.swift */,
+				FF5B8EE3AE11BB21CD0DA406 /* SortController.swift */,
+				FF5B8721EB730986820C0977 /* SortItemCell.swift */,
+				FF5B851CA38C82D5F5272439 /* SortItemCell.xib */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		FF5B89A80377D92E310A1C94 /* SortBookList */ = {
+			isa = PBXGroup;
+			children = (
+				FF5B8BC89D28E69F3EB8C681 /* SortBookListController.swift */,
+				FF5B8C8DEC2B127D3B484FF7 /* SortBookListItem.swift */,
+				FF5B8611BB3C66D3A34E044D /* SortBookListItem.xib */,
+			);
+			path = SortBookList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -793,7 +801,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F9C564D2320FF7A00326B6D /* GKClassifyTailCell.xib in Resources */,
 				0F4C11682332342A00F6243D /* LaunchScreen.storyboard in Resources */,
 				0F7F85FC2473AD6B001AE117 /* Launch.json in Resources */,
 				0FC9182C2328E25200E79AC3 /* GKMineTableViewCell.xib in Resources */,
@@ -808,10 +815,11 @@
 				0F801BA62338BBC000E453C6 /* GKBookTableCell.xib in Resources */,
 				0F4C118A2332384900F6243D /* GKNovelTabView.xib in Resources */,
 				0F4C11A4233238E800F6243D /* GKSexCell.xib in Resources */,
-				0F3920D82320E6F700F0ED44 /* GKClassifyCell.xib in Resources */,
 				0F335A882326264B00785F06 /* GKBookCell.xib in Resources */,
 				0F4C11642332332700F6243D /* Assets.xcassets in Resources */,
 				0F4C11A5233238E800F6243D /* GKHomeNavBarView.xib in Resources */,
+				FF5B86E3FC107EA037007B71 /* SortBookListItem.xib in Resources */,
+				FF5B888E80A9A7C257661D7D /* SortItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,22 +895,18 @@
 				0F4C11832332384900F6243D /* GKNovelChapter.swift in Sources */,
 				0F4C11B02332392200F6243D /* GKLaunchController.swift in Sources */,
 				0F25A3002325EE0100FDF707 /* GKBookDetailModel.swift in Sources */,
-				0F9C564C2320FF7A00326B6D /* GKClassifyTailCell.swift in Sources */,
 				0F335A872326264B00785F06 /* GKBookCell.swift in Sources */,
 				0F4C11A7233238E800F6243D /* GKHomeReusableView.swift in Sources */,
 				0F48240F21C2070C00645054 /* BaseNetManager.swift in Sources */,
 				0F4C119F233238E800F6243D /* GKHomeController.swift in Sources */,
 				0F0F56E72320AC380030D684 /* GKBookCaseController.swift in Sources */,
-				0F0F56E42320AB800030D684 /* GKClassifyController.swift in Sources */,
 				0F63C83424AD7266005EC862 /* GKNovelTapView.swift in Sources */,
 				0F4C11A0233238E800F6243D /* GKHomeMoreController.swift in Sources */,
-				0F0F56E92320BCD60030D684 /* GKClassifyItemController.swift in Sources */,
 				0F4C11802332384900F6243D /* GKNovelContentController.swift in Sources */,
 				0FC918282328DFFE00E79AC3 /* GKMineController.swift in Sources */,
 				0F6BEA3823277C28001232FC /* DZMCoverController.m in Sources */,
 				0F48240D21C2049800645054 /* BaseModel.swift in Sources */,
 				0F6BEA3023277AC3001232FC /* GKJump.swift in Sources */,
-				0F3920DD2320F2FC00F0ED44 /* GKClassifyTailController.swift in Sources */,
 				0FC9182B2328E25200E79AC3 /* GKMineTableViewCell.swift in Sources */,
 				0F7A41422334D1AB00C8D42C /* GKSearchHeadView.swift in Sources */,
 				0F2CDC48243446A4009B1368 /* AppUser.swift in Sources */,
@@ -917,11 +921,10 @@
 				0F9C56522321106E00326B6D /* GKDetailViewController.swift in Sources */,
 				0FF054BB2328C921007FDF67 /* GKBrowseModel.swift in Sources */,
 				0FC998DF2431A47900DE70C2 /* GKTool.m in Sources */,
-				0F3920D42320D9E200F0ED44 /* GKClassifyModel.swift in Sources */,
+				0F3920D42320D9E200F0ED44 /* SortBean.swift in Sources */,
 				0F25A3042326000800FDF707 /* RoubSiteNovelClassifyNet.swift in Sources */,
 				0F4C11812332384900F6243D /* GKNovelItemController.swift in Sources */,
 				0F25A3062326002000FDF707 /* GKBookCaseDataQueue.swift in Sources */,
-				0F3920D72320E6F700F0ED44 /* GKClassifyCell.swift in Sources */,
 				0F59AD8223420D5B00501576 /* BaseTableViewController.swift in Sources */,
 				0F801BA82338BEEB00E453C6 /* GKNumber.swift in Sources */,
 				0F1676BC233351880053AF41 /* GKNovelDirectoryCell.swift in Sources */,
@@ -955,6 +958,11 @@
 				0F4C118D2332384900F6243D /* GKNovelTabView.swift in Sources */,
 				0F9C565A23211B1600326B6D /* GKDetailTopView.swift in Sources */,
 				0F1676B92333501B0053AF41 /* GKNovelDirectoryView.swift in Sources */,
+				FF5B85189D74EC269992281A /* SortItemController.swift in Sources */,
+				FF5B8C8A726090B10370A57E /* SortBookListController.swift in Sources */,
+				FF5B8093155DD9D175BCDE3C /* SortBookListItem.swift in Sources */,
+				FF5B8B6CE58F105DA66758BF /* SortController.swift in Sources */,
+				FF5B81A2877BF9416C8ADF3F /* SortItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

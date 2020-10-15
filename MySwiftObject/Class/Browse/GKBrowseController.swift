@@ -43,7 +43,7 @@ class GKBrowseController: BaseTableViewController {
     
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : GKClassifyTailCell = GKClassifyTailCell.cellForTableView(tableView: tableView, indexPath: indexPath)
+        let cell : SortBookListItem = SortBookListItem.cellForTableView(tableView: tableView, indexPath: indexPath)
         let model :GKBrowseModel = self.listData[indexPath.row];
         let time :String = GKNumber.getTime(timeStamp: model.updateTime);
         cell.model = model.bookModel;

@@ -1,11 +1,3 @@
-//
-//  GKHomeMoreController.swift
-//  MySwiftObject
-//
-//  Created by wangws1990 on 2019/9/10.
-//  Copyright © 2019 wangws1990. All rights reserved.
-//
-
 import UIKit
 
 class GKHomeMoreController: BaseTableViewController {
@@ -44,7 +36,7 @@ class GKHomeMoreController: BaseTableViewController {
         return UITableView.automaticDimension;
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell :GKClassifyTailCell = GKClassifyTailCell.cellForTableView(tableView: tableView, indexPath: indexPath)
+        let cell :SortBookListItem = SortBookListItem.cellForTableView(tableView: tableView, indexPath: indexPath)
         cell.model = self.bookInfo.books[indexPath.row];
         return cell;
     }

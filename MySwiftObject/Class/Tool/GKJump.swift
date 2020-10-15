@@ -31,7 +31,7 @@ class GKJump: NSObject {
         UIViewController.rootTopPresentedController().navigationController?.pushViewController(vc, animated: true);
     }
     class func jumpToClassifyTail(sortId:String,name:String){
-        let vc:GKClassifyTailController = GKClassifyTailController(sortId: sortId, name: name)
+        let vc:SortBookListController = SortBookListController(sortId: sortId, name: name)
         vc.hidesBottomBarWhenPushed = true;
         UIViewController.rootTopPresentedController().navigationController?.pushViewController(vc, animated: true);
     }

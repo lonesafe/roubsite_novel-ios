@@ -1,5 +1,5 @@
 //
-//  GKClassifyItemController.swift
+//  SortItemController.swift
 //  MySwiftObject
 //
 //  Created by wangws1990 on 2019/9/5.
@@ -10,13 +10,13 @@ import UIKit
 import SwiftyJSON
 import ATRefresh_Swift
 
-class GKClassifyItemController: BaseConnectionController {
-    var titleName : String = ""{
+class SortItemController: BaseConnectionController {
+    var parentSortId: String = ""{
         didSet{
             self.refreshData(page: 1)
         }
     }
-    private lazy var listData: [GKClassifyModel] = {
+    private lazy var listData: [SortBean] = {
         return [];
     }()
     override func viewDidLoad() {
@@ -30,14 +30,15 @@ class GKClassifyItemController: BaseConnectionController {
         }
     }
     override func refreshData(page: Int) {
-        RoubSiteNovelClassifyNet.getSmallSort(pId: self.titleName, sucesss: { (object) in
+        RoubSiteNovelClassifyNet.getSmallSort(pId: self.parentSortId, sucesss: { (object) in
             if page == RefreshPageStart{
                 self.listData.removeAll();
             }
             if object["status"] == "1"{
                 let list:[JSON] = object["data"].arrayValue;
+                print(object)
                 for sortInfo in list {
-                    let bean:GKClassifyModel = GKClassifyModel.init();
+                    let bean:SortBean = SortBean.init();
                     bean.title = sortInfo["SORT_NAME"].stringValue;
                     bean.id = sortInfo["SORT_ID"].stringValue;
                     bean.bookCount = sortInfo["COUNT"].intValue;
@@ -50,11 +51,11 @@ class GKClassifyItemController: BaseConnectionController {
 
             }
             
-            if let list : [JSON] = object[self.titleName].array{
+            if let list : [JSON] = object[self.parentSortId].array{
                 for obj in list{
 //                    let decoder = JSONDecoder()
                     do {
-                        let user = try JSONDecoder().decode(GKClassifyModel.self, from: obj.rawData())
+                        let user = try JSONDecoder().decode(SortBean.self, from: obj.rawData())
                         self.listData.append(user);
                         print(user)
                     } catch {
@@ -91,13 +92,13 @@ class GKClassifyItemController: BaseConnectionController {
         return CGSize.init(width: width, height: height);
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell :GKClassifyCell = GKClassifyCell.cellForCollectionView(collectionView: collectionView, indexPath: indexPath);
+        let cell :SortItemCell = SortItemCell.cellForCollectionView(collectionView: collectionView, indexPath: indexPath);
         
         cell.model = self.listData[indexPath.row];
         return cell;
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let model:GKClassifyModel = self.listData[indexPath.row];
+        let model:SortBean = self.listData[indexPath.row];
         GKJump.jumpToClassifyTail(sortId: model.id!, name: model.title!)
     }
     

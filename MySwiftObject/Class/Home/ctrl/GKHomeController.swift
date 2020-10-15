@@ -1,11 +1,3 @@
-//
-//  GKHomeController.swift
-//  MySwiftObject
-//
-//  Created by wangws1990 on 2019/9/5.
-//  Copyright © 2019 wangws1990. All rights reserved.
-//
-
 import UIKit
 
 class GKHomeController: BaseConnectionController,KLRecycleScrollViewDelegate {

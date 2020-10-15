@@ -1,5 +1,5 @@
 //
-//  GKClassifyController.swift
+//  SortController.swift
 //  MySwiftObject
 //
 //  Created by wangws1990 on 2019/9/5.
@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class GKClassifyController: BaseViewController,VTMagicViewDelegate,VTMagicViewDataSource {
+class SortController: BaseViewController,VTMagicViewDelegate,VTMagicViewDataSource {
     private var listData:[String]=[];
     private var listTitles:[String]=[];
     private lazy var magicViewCtrl: VTMagicController = {
@@ -85,9 +85,9 @@ class GKClassifyController: BaseViewController,VTMagicViewDelegate,VTMagicViewDa
     }
     
     func magicView(_ magicView: VTMagicView, viewControllerAtPage pageIndex: UInt) -> UIViewController {
-        let vc = (magicView.dequeueReusablePage(withIdentifier: "com.new.btn.itemIdentifier")) ?? GKClassifyItemController()
-        let ctrl :GKClassifyItemController = vc as! GKClassifyItemController
-        ctrl.titleName = self.listData[Int(pageIndex)]
+        let vc = (magicView.dequeueReusablePage(withIdentifier: "com.new.btn.itemIdentifier")) ?? SortItemController()
+        let ctrl :SortItemController = vc as! SortItemController
+        ctrl.parentSortId = self.listData[Int(pageIndex)]
         return vc
     }
     override var preferredStatusBarStyle: UIStatusBarStyle{

@@ -17,7 +17,7 @@ class GKTabBarController: UITabBarController {
         self.tabBar.isTranslucent = false;
         let vc = GKHomeController.init();
         self.createCtrl(vc: vc, title:"首页", normal:"icon_tabbar_home_n", select:"icon_tabbar_home_h");
-        let classCtrl = GKClassifyController.init();
+        let classCtrl = SortController.init();
         self.createCtrl(vc: classCtrl, title:"分类", normal:"icon_tabbar_found_n", select:"icon_tabbar_found_h");
         let bookCaseCtrl = GKBookCaseController.init();
         self.createCtrl(vc: bookCaseCtrl, title:"书架", normal:"icon_tabbar_video_n", select:"icon_tabbar_video_h");
