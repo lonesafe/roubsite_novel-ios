@@ -42,7 +42,7 @@ class GKNovelItemController: BaseViewController {
         label.font  = UIFont.systemFont(ofSize: 18);
         label.textColor = Appx999999;
         label.textAlignment = .center;
-        label.text = "Data loading...";
+        label.text = "数据加载中...";
         return label;
     }()
     private lazy var readView: GKNovelView = {

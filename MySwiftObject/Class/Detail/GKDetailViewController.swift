@@ -102,15 +102,15 @@ class GKDetailViewController: YNPageViewController, YNPageViewControllerDelegate
                 GKBookCaseDataQueue.insertBookModel(bookDetail: model) { (success) in
                     if success {
                         self.tabView.favBtn.isSelected = true;
-                        MBProgressHUD.showMessage("收藏成功");
+                        MBProgressHUD.showMessage("已添加到书架");
                     }
                 }
             } else {
-                ATAlertView.showAlertView(title: "是否取消收藏？", message: "", normals: ["取消"], hights: ["确定"]) { (title, index) in
+                ATAlertView.showAlertView(title: "是否从书架中移出？", message: "", normals: ["取消"], hights: ["确定"]) { (title, index) in
                     if index > 0 {
                         GKBookCaseDataQueue.deleteBookModel(bookId: self.bookId, sucesss: { (success) in
                             if success {
-                                MBProgressHUD.showMessage("取消收藏成功");
+                                MBProgressHUD.showMessage("移出成功");
                                 self.tabView.favBtn.isSelected = false;
                             }
                         })
