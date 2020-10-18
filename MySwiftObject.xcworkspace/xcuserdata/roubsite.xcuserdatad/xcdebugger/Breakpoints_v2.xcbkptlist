@@ -20,5 +20,235 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "913DE7B3-354D-4D4E-85AF-ADD659451A77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySwiftObject/Class/Tool/GKJump.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "jumpToNovel(bookModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA01CB2D-2F8A-4F61-A840-622D5685AEAE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySwiftObject/Class/Read/ctrl/GKNovelContentController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "init(bookModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "EAA94EBC-B8B3-48E9-B689-7DCB224162AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E84AE2B-C4C5-41E9-9FEA-B156E75EC082"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySwiftObject/Class/Read/ctrl/GKNovelContentController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "tapView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B9FA306-1163-47E9-AC0B-2ECF5C822469"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySwiftObject/Class/Read/view/GKNovelTapView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "0B9FA306-1163-47E9-AC0B-2ECF5C822469 - e767524f032cc6e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_021AB70DC717A6609B063BBD96543727_func1"
+                  moduleName = "Novel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roubsite/Documents/roubsite_novel-ios/MySwiftObject/Class/Read/view/GKNovelTapView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "0B9FA306-1163-47E9-AC0B-2ECF5C822469 - a60c7a7a5ecae3ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Novel.(tap_bottom_height in _021AB70DC717A6609B063BBD96543727).unsafeMutableAddressor : CoreGraphics.CGFloat"
+                  moduleName = "Novel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roubsite/Documents/roubsite_novel-ios/MySwiftObject/Class/Read/view/GKNovelTapView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C85C4000-BE93-4B6B-896D-A20EDFB7EBB2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySwiftObject/Class/Read/view/GKNovelTabView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "ED78D780-A6E0-442E-A4AC-6BC4260AB576"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = ""
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39648DBA-BE81-4E28-846B-F6B33936F5B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySwiftObject/Base/controller/BaseMacro.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "BaseMacro"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "39648DBA-BE81-4E28-846B-F6B33936F5B4 - 4e25f735266757c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Novel.BaseMacro.TAB_BAR_ADDING.getter : CoreGraphics.CGFloat"
+                  moduleName = "Novel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roubsite/Documents/roubsite_novel-ios/MySwiftObject/Base/controller/BaseMacro.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "39648DBA-BE81-4E28-846B-F6B33936F5B4 - 78d35a2ec01987b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Novel.BaseMacro.TAB_BAR_ADDING.setter : CoreGraphics.CGFloat"
+                  moduleName = "Novel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roubsite/Documents/roubsite_novel-ios/MySwiftObject/Base/controller/BaseMacro.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "39648DBA-BE81-4E28-846B-F6B33936F5B4 - 94cdde4d4ec4116e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Novel.BaseMacro.TAB_BAR_ADDING.modify : CoreGraphics.CGFloat"
+                  moduleName = "Novel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roubsite/Documents/roubsite_novel-ios/MySwiftObject/Base/controller/BaseMacro.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "39648DBA-BE81-4E28-846B-F6B33936F5B4 - e1dad56ca358fbb7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Novel.BaseMacro.TAB_BAR_ADDING.modify : CoreGraphics.CGFloat with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Novel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roubsite/Documents/roubsite_novel-ios/MySwiftObject/Base/controller/BaseMacro.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "39648DBA-BE81-4E28-846B-F6B33936F5B4 - f110120a53d3e433"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Novel.BaseMacro.init() -&gt; Novel.BaseMacro"
+                  moduleName = "Novel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roubsite/Documents/roubsite_novel-ios/MySwiftObject/Base/controller/BaseMacro.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

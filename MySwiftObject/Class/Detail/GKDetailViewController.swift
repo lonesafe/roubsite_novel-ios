@@ -26,7 +26,7 @@ class GKDetailViewController: YNPageViewController, YNPageViewControllerDelegate
         config?.itemMargin = 40;
         config?.lineColor = AppColor;
         config?.normalItemColor = Appx333333;
-        config?.suspenOffsetY = STATUS_BAR_HIGHT;
+        config?.suspenOffsetY = BaseMacro.init().STATUS_BAR_HIGHT;
         config?.lineWidthEqualFontWidth = true;
         let vc: GKDetailViewController = GKDetailViewController.init(controllers: [GKCenterController.vcWithBookId(bookId: bookId), GKChapterController.vcWithBookId(bookId: bookId)], titles: ["推荐", "章节"], config: config);
         vc.delegate = vc;
@@ -38,7 +38,7 @@ class GKDetailViewController: YNPageViewController, YNPageViewControllerDelegate
 
     private lazy var topView: GKDetailTopView = {
         let topView: GKDetailTopView = GKDetailTopView.instanceView();
-        topView.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: 150 + NAVI_BAR_HIGHT);
+        topView.frame = CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: 150 + BaseMacro.init().NAVI_BAR_HIGHT);
         topView.backAction.addTarget(self, action: #selector(goBackAction), for: .touchUpInside)
         return topView;
     }()
@@ -83,7 +83,7 @@ class GKDetailViewController: YNPageViewController, YNPageViewControllerDelegate
         self.tabView.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview();
             make.height.equalTo(49)
-            make.bottom.equalToSuperview().offset(-TAB_BAR_ADDING);
+            make.bottom.equalToSuperview().offset(-BaseMacro.init().TAB_BAR_ADDING);
         }
     }
 

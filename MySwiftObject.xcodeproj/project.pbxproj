@@ -302,7 +302,7 @@
 			children = (
 				0F0F56E52320AC160030D684 /* BookCase */,
 				0FC9182F2328E71C00E79AC3 /* Browse */,
-				0F0F56D82320A57E0030D684 /* Classify */,
+				0F0F56D82320A57E0030D684 /* Sort */,
 				0F25A3022326000800FDF707 /* DataNet */,
 				0F25A3012326000800FDF707 /* DataQueue */,
 				0F9C56502321104400326B6D /* Detail */,
@@ -317,7 +317,7 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		0F0F56D82320A57E0030D684 /* Classify */ = {
+		0F0F56D82320A57E0030D684 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
 				0F25A2FF2325EE0100FDF707 /* GKBookDetailModel.swift */,
@@ -327,7 +327,7 @@
 				FF5B8269AED1C23AC681343A /* Sort */,
 				FF5B89A80377D92E310A1C94 /* SortBookList */,
 			);
-			path = Classify;
+			path = Sort;
 			sourceTree = "<group>";
 		};
 		0F0F56E02320A7F40030D684 /* TabCtrl */ = {

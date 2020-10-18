@@ -36,7 +36,7 @@ class GKHomeController: BaseConnectionController,KLRecycleScrollViewDelegate {
         self.view.addSubview(self.navBarView);
         self.navBarView.snp_makeConstraints { (make) in
             make.left.right.top.equalToSuperview();
-            make.height.equalTo(NAVI_BAR_HIGHT);
+            make.height.equalTo(BaseMacro.init().NAVI_BAR_HIGHT);
         }
         self.collectionView.snp.remakeConstraints { (make) in
             make.top.equalTo(self.navBarView.snp_bottom);

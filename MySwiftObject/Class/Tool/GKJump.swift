@@ -49,8 +49,8 @@ class GKJump: NSObject {
         vc.hidesBottomBarWhenPushed = true;
         let nvc : BaseNavigationController = BaseNavigationController.init(rootViewController: vc);
         nvc.modalPresentationStyle = .fullScreen;
-//        UIViewController.rootTopPresentedController().navigationController?.pushViewController(vc, animated: true)
-        UIViewController.rootTopPresentedController().present(nvc, animated: false, completion: nil);
+        UIViewController.rootTopPresentedController().navigationController?.pushViewController(vc, animated: true)
+//        UIViewController.rootTopPresentedController().present(nvc, animated: false, completion: nil);
     }
     class func jumpToBrowse(){
         let vc:GKBrowseController = GKBrowseController();

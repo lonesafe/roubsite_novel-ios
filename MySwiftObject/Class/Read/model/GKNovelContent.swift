@@ -40,7 +40,7 @@ class GKNovelContent: HandyJSON {
             self.content   <-- ["cpContent","body","content"]
     }
     func pageContent(){
-        self.pageBound(bound:AppFrame)
+        self.pageBound(bound:BaseMacro.init().AppFrame)
     }
     private func pageBound(bound:CGRect){
         self.pageArray.removeAll();

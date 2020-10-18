@@ -33,7 +33,7 @@ class GKNovelDirectoryView: UIView,UITableViewDataSource,UITableViewDelegate {
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.tableView.contentInset = UIEdgeInsets.init(top:STATUS_BAR_HIGHT, left: 0, bottom: 0, right: 0)
+        self.tableView.contentInset = UIEdgeInsets.init(top:BaseMacro.init().STATUS_BAR_HIGHT, left: 0, bottom: 0, right: 0)
         self.loadUI();
         
     }

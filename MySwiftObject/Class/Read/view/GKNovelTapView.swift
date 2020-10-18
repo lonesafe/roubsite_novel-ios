@@ -8,7 +8,7 @@
 
 import UIKit
 private let tap_set_heigt     = CGFloat(200)
-private let tap_bottom_height = CGFloat(90 + TAB_BAR_ADDING)
+private let tap_bottom_height = CGFloat(90 + BaseMacro.init().TAB_BAR_ADDING)
 class GKNovelTapView: UIView {
 
     lazy var topView : GKNovelTopView = {
@@ -80,8 +80,8 @@ class GKNovelTapView: UIView {
         
         self.topView.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
-            make.top.equalToSuperview().offset(-NAVI_BAR_HIGHT)
-            make.height.equalTo(NAVI_BAR_HIGHT)
+            make.top.equalToSuperview().offset(-BaseMacro.init().NAVI_BAR_HIGHT)
+            make.height.equalTo(BaseMacro.init().NAVI_BAR_HIGHT)
         }
         self.bottom.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
@@ -106,7 +106,7 @@ class GKNovelTapView: UIView {
         }
         
         self.addSubview(self.directoryView)
-        self.directoryView.snp_makeConstraints { (make) in
+        self.directoryView.snp.makeConstraints { (make) in
             make.top.bottom.equalToSuperview()
             make.width.equalTo(SCREEN_WIDTH/5*4)
             make.left.equalToSuperview().offset(-SCREEN_WIDTH/5*4)
@@ -119,7 +119,7 @@ class GKNovelTapView: UIView {
         self.tapView.isHidden = false
         self.topView.snp.remakeConstraints { (make) in
             make.left.right.top.equalToSuperview()
-            make.height.equalTo(NAVI_BAR_HIGHT)
+            make.height.equalTo(BaseMacro.init().NAVI_BAR_HIGHT)
         }
         self.bottom.snp.remakeConstraints { (make) in
             make.left.right.bottom.equalToSuperview()
@@ -140,8 +140,8 @@ class GKNovelTapView: UIView {
     private func loadHiddenTop(needHidden : Bool){
         self.topView.snp.remakeConstraints { (make) in
             make.left.right.equalToSuperview()
-            make.height.equalTo(NAVI_BAR_HIGHT)
-            make.top.equalTo(-NAVI_BAR_HIGHT);
+            make.height.equalTo(BaseMacro.init().NAVI_BAR_HIGHT)
+            make.top.equalTo(-BaseMacro.init().NAVI_BAR_HIGHT);
         }
         self.bottom.snp.remakeConstraints { (make) in
             make.left.right.equalToSuperview()
@@ -194,8 +194,8 @@ class GKNovelTapView: UIView {
     private func loadHiddenBottom(){
         self.topView.snp.remakeConstraints { (make) in
             make.left.right.equalToSuperview()
-            make.height.equalTo(NAVI_BAR_HIGHT)
-            make.top.equalTo(-NAVI_BAR_HIGHT);
+            make.height.equalTo(BaseMacro.init().NAVI_BAR_HIGHT)
+            make.top.equalTo(-BaseMacro.init().NAVI_BAR_HIGHT);
         }
         self.bottom.snp.remakeConstraints { (make) in
             make.left.right.equalToSuperview()
@@ -247,7 +247,8 @@ class GKNovelTapView: UIView {
         }
     }
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        self.init()
+        //fatalError("init(coder:) has not been implemented")
     }
     @objc func setAction(){
         if self.setView.isHidden {

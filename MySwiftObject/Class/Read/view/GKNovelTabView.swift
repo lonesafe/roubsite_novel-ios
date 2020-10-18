@@ -24,7 +24,7 @@ class GKNovelTabView: UIView {
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var bottomHeight: NSLayoutConstraint!
     override func awakeFromNib() {
-        self.bottomHeight.constant = TAB_BAR_ADDING + 5;
+        self.bottomHeight.constant = BaseMacro.init().TAB_BAR_ADDING + 5;
         self.slider.setThumbImage(UIImage.init(named: "icon_slider"), for: .normal)
         
     }

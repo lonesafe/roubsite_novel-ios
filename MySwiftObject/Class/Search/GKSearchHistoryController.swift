@@ -57,7 +57,7 @@ class GKSearchHistoryController: BaseTableViewController,UITextFieldDelegate,UIC
         self.view.addSubview(self.searchView);
         self.searchView.snp_makeConstraints { (make) in
             make.left.right.top.equalToSuperview();
-            make.height.equalTo(NAVI_BAR_HIGHT);
+            make.height.equalTo(BaseMacro.init().NAVI_BAR_HIGHT);
         }
         self.tableView.snp_remakeConstraints { (make) in
             make.left.right.bottom.equalToSuperview();

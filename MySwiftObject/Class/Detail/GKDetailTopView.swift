@@ -64,7 +64,7 @@ class GKDetailTopView: UIView {
         self.mainView.layer.masksToBounds = true;
         self.focusLab.layer.masksToBounds = true;
         self.focusLab.layer.cornerRadius = 5;
-        self.topImageV.constant = CGFloat(NAVI_BAR_HIGHT);
+        self.topImageV.constant = CGFloat(BaseMacro.init().NAVI_BAR_HIGHT);
         let effect: UIBlurEffect = UIBlurEffect.init(style: .dark);
         let effectView: UIVisualEffectView = UIVisualEffectView.init(effect: effect);
         self.mainView.addSubview(effectView);

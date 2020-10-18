@@ -68,7 +68,7 @@ class GKSexViewController: BaseConnectionController {
         self.view.addSubview(self.titleLab);
         self.titleLab.snp_makeConstraints { (make) in
             make.left.right.equalToSuperview();
-            make.top.equalToSuperview().offset(20 + STATUS_BAR_HIGHT);
+            make.top.equalToSuperview().offset(20 + BaseMacro.init().STATUS_BAR_HIGHT);
         }
         self.view.addSubview(self.boyBtn);
         self.view.addSubview(self.girlBtn);
@@ -84,7 +84,7 @@ class GKSexViewController: BaseConnectionController {
         }
         self.view.addSubview(self.sureBtn);
         self.sureBtn.snp_makeConstraints { (make) in
-            make.bottom.equalToSuperview().offset((-TAB_BAR_ADDING - 20));
+            make.bottom.equalToSuperview().offset((-BaseMacro.init().TAB_BAR_ADDING - 20));
             make.height.equalTo(44);
             make.left.equalToSuperview().offset(20);
             make.right.equalToSuperview().offset(-20);

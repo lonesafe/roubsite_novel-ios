@@ -14,7 +14,7 @@ class SortController: BaseViewController,VTMagicViewDelegate,VTMagicViewDataSour
     private var listTitles:[String]=[];
     private lazy var magicViewCtrl: VTMagicController = {
         let ctrl = VTMagicController.init();
-        ctrl.magicView.navigationInset = UIEdgeInsets(top: STATUS_BAR_HIGHT, left: 10, bottom: 0, right: 10);
+        ctrl.magicView.navigationInset = UIEdgeInsets(top: BaseMacro.init().STATUS_BAR_HIGHT, left: 10, bottom: 0, right: 10);
         ctrl.magicView.separatorHeight = 0.5;
         ctrl.magicView.backgroundColor = Appxffffff
         ctrl.magicView.separatorColor = UIColor.clear;
@@ -27,7 +27,7 @@ class SortController: BaseViewController,VTMagicViewDelegate,VTMagicViewDataSour
         ctrl.magicView.sliderWidth = 30;
         
         ctrl.magicView.layoutStyle = .default;
-        ctrl.magicView.navigationHeight = NAVI_BAR_HIGHT;
+        ctrl.magicView.navigationHeight = BaseMacro.init().NAVI_BAR_HIGHT;
         ctrl.magicView.sliderHeight = 2;
         ctrl.magicView.itemSpacing = 20;
         
