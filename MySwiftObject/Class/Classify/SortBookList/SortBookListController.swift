@@ -1,26 +1,21 @@
-//
-//  SortBookListController.swift
-//  MySwiftObject
-//
-//  Created by wangws1990 on 2019/9/5.
-//  Copyright © 2019 wangws1990. All rights reserved.
-//
-
 import UIKit
 import SwiftyJSON
 
 class SortBookListController: BaseTableViewController {
-    convenience init(sortId: String, name: String) {
+    private var sortId: String!;
+    private var name: String!;
+    private var type: String!;
+
+    convenience init(sortId: String, name: String, type: String) {
         self.init();
         self.sortId = sortId;
         self.name = name;
+        self.type = type;
     }
 
     private lazy var listData: [GKBookModel] = {
         return []
     }()
-    private var sortId: String!;
-    private var name: String!;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +25,7 @@ class SortBookListController: BaseTableViewController {
     }
 
     override func refreshData(page: Int) {
-        RoubSiteNovelClassifyNet.classifyTail(sortId: self.sortId, type: "CREATE_TIME", page: page, sucesss: { (respond) in
+        RoubSiteNovelClassifyNet.classifyTail(sortId: self.sortId, type: self.type, page: page, sucesss: { (respond) in
             if page == RefreshPageStart {
                 self.listData.removeAll();
             }

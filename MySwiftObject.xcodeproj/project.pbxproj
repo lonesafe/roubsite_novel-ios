@@ -108,6 +108,7 @@
 		FF5B888E80A9A7C257661D7D /* SortItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5B851CA38C82D5F5272439 /* SortItemCell.xib */; };
 		FF5B8B6CE58F105DA66758BF /* SortController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8EE3AE11BB21CD0DA406 /* SortController.swift */; };
 		FF5B8C8A726090B10370A57E /* SortBookListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8BC89D28E69F3EB8C681 /* SortBookListController.swift */; };
+		FF5B8F0C6A7005955C1A2AAA /* SortBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8AD493A9555716282BEF /* SortBookController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,6 +254,7 @@
 		FF5B8611BB3C66D3A34E044D /* SortBookListItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortBookListItem.xib; sourceTree = "<group>"; };
 		FF5B8721EB730986820C0977 /* SortItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortItemCell.swift; sourceTree = "<group>"; };
 		FF5B8952800865E9DAB99576 /* SortItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortItemController.swift; sourceTree = "<group>"; };
+		FF5B8AD493A9555716282BEF /* SortBookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortBookController.swift; sourceTree = "<group>"; };
 		FF5B8BC89D28E69F3EB8C681 /* SortBookListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortBookListController.swift; sourceTree = "<group>"; };
 		FF5B8C8DEC2B127D3B484FF7 /* SortBookListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortBookListItem.swift; sourceTree = "<group>"; };
 		FF5B8EE3AE11BB21CD0DA406 /* SortController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortController.swift; sourceTree = "<group>"; };
@@ -689,6 +691,7 @@
 				FF5B8BC89D28E69F3EB8C681 /* SortBookListController.swift */,
 				FF5B8C8DEC2B127D3B484FF7 /* SortBookListItem.swift */,
 				FF5B8611BB3C66D3A34E044D /* SortBookListItem.xib */,
+				FF5B8AD493A9555716282BEF /* SortBookController.swift */,
 			);
 			path = SortBookList;
 			sourceTree = "<group>";
@@ -963,6 +966,7 @@
 				FF5B8093155DD9D175BCDE3C /* SortBookListItem.swift in Sources */,
 				FF5B8B6CE58F105DA66758BF /* SortController.swift in Sources */,
 				FF5B81A2877BF9416C8ADF3F /* SortItemCell.swift in Sources */,
+				FF5B8F0C6A7005955C1A2AAA /* SortBookController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

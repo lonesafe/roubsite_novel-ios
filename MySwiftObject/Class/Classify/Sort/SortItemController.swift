@@ -1,11 +1,3 @@
-//
-//  SortItemController.swift
-//  MySwiftObject
-//
-//  Created by wangws1990 on 2019/9/5.
-//  Copyright © 2019 wangws1990. All rights reserved.
-//
-
 import UIKit
 import SwiftyJSON
 import ATRefresh_Swift
@@ -99,7 +91,7 @@ class SortItemController: BaseConnectionController {
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model:SortBean = self.listData[indexPath.row];
-        GKJump.jumpToClassifyTail(sortId: model.id!, name: model.title!)
+        GKJump.jumpToSortBook(sortId: model.id!, name: model.title!)
     }
     
 }

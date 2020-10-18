@@ -1,11 +1,3 @@
-//
-//  BaseViewController.swift
-//  GKGame_Swift
-//
-//  Created by wangws1990 on 2019/9/29.
-//  Copyright © 2019 wangws1990. All rights reserved.
-//
-
 import UIKit
 import SwiftyJSON
 import ATKit_Swift
